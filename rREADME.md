@@ -2,12 +2,13 @@
 <div align="center">
 
 <img
-  src="https://capsule-render.vercel.app/api?type=rect&height=240&color=0:09090F,50:211333,100:09090F&text=KATANA.&fontSize=76&fontColor=FFFFFF&fontAlignY=43&fontFamily=Orbitron&animation=fadeIn&desc=DATA%20ENGINEER%20%2F%20SYSTEMS%20ARCHITECTURE&descSize=16&descColor=C9A7FF&descAlignY=62"
+  src="./assets/katana-header.svg"
   width="100%"
   alt="katana. — Data Engineer"
 />
 
 </div>
+
 
 
 ---
