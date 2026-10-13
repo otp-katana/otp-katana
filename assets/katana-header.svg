@@ -23,6 +23,12 @@
       <stop offset="1" stop-color="#AAA5B9"/>
     </linearGradient>
 
+    <linearGradient id="impactGlow" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#BEAED5" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="1" stop-color="#BEAED5" stop-opacity="0"/>
+    </linearGradient>
+
     <pattern id="grid" width="24" height="24"
              patternUnits="userSpaceOnUse">
       <path d="M24 0H0V24"
@@ -45,6 +51,15 @@
       </feMerge>
     </filter>
 
+    <filter id="hardGlow" x="-100%" y="-100%"
+            width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
     <clipPath id="panel">
       <rect width="1200" height="320" rx="7"/>
     </clipPath>
@@ -52,135 +67,443 @@
 
   <g clip-path="url(#panel)">
 
-    <!-- Base -->
+    <!-- BASE -->
     <rect width="1200" height="320" fill="url(#bg)"/>
     <rect width="1200" height="320" fill="url(#grid)"/>
     <rect width="1200" height="320" fill="url(#microGrid)" opacity=".35"/>
 
-    <!-- Angular background plates -->
-    <path d="M0 0H345L275 70H0Z"
-          fill="#0D0C1A"/>
-    <path d="M1200 0H920L1005 70H1200Z"
-          fill="#0D0C1A"/>
+    <!-- ANGULAR BACKGROUND PLATES -->
+    <path d="M0 0H345L275 70H0Z" fill="#0D0C1A"/>
+    <path d="M1200 0H920L1005 70H1200Z" fill="#0D0C1A"/>
     <path d="M0 320V257L90 190H220L150 320Z"
           fill="#0D0C1A" opacity=".9"/>
     <path d="M1200 320V255L1110 190H980L1050 320Z"
           fill="#0D0C1A" opacity=".9"/>
 
-   
-     <!-- CYBERNETIC DIMENSION GATE -->
+    <!-- CYBERNETIC DIMENSION GATE -->
+    <g id="dimension-gate">
+
+      <!-- Dark opening -->
+      <path d="M470 69H730L804 112V208L730 251H470L396 208V112Z"
+            fill="#08080F" stroke="#BEAED5"
+            stroke-opacity=".55" stroke-width="1.5"/>
+
+      <!-- Inner aperture -->
+      <path d="M510 91H690L750 126V194L690 229H510L450 194V126Z"
+            fill="#0D0C1A" stroke="#AAA5B9"
+            stroke-opacity=".35"/>
+
+      <!-- Upper-left armor shard -->
+      <polygon points="470,69 535,69 570,112 510,126 450,112 396,112"
+               fill="#151124" stroke="#BEAED5" stroke-opacity=".8">
+        <animateTransform attributeName="transform" type="translate"
+          values="0 0;-24 -20;-24 -20;0 0"
+          keyTimes="0;.18;.65;1" dur="3.2s"
+          repeatCount="indefinite"/>
+      </polygon>
+
+      <!-- Upper-center armor shard -->
+      <polygon points="535,69 665,69 690,91 630,112 570,112"
+               fill="#211832" stroke="#E8D5EF" stroke-opacity=".7">
+        <animateTransform attributeName="transform" type="translate"
+          values="0 0;0 -27;0 -27;0 0"
+          keyTimes="0;.18;.65;1" dur="3.2s"
+          begin=".025s" repeatCount="indefinite"/>
+      </polygon>
+
+      <!-- Upper-right armor shard -->
+      <polygon points="665,69 730,69 804,112 750,126 690,112"
+               fill="#171226" stroke="#BEAED5" stroke-opacity=".8">
+        <animateTransform attributeName="transform" type="translate"
+          values="0 0;25 -19;25 -19;0 0"
+          keyTimes="0;.18;.65;1" dur="3.2s"
+          begin=".045s" repeatCount="indefinite"/>
+      </polygon>
+
+      <!-- Left armor shard -->
+      <polygon points="396,112 450,112 510,126 510,160 450,176 396,208"
+               fill="#171226" stroke="#BEAED5" stroke-opacity=".8">
+        <animateTransform attributeName="transform" type="translate"
+          values="0 0;-32 0;-32 0;0 0"
+          keyTimes="0;.18;.65;1" dur="3.2s"
+          begin=".015s" repeatCount="indefinite"/>
+      </polygon>
+
+      <!-- Right armor shard -->
+      <polygon points="690,112 750,126 804,112 804,208 750,176 690,160"
+               fill="#171226" stroke="#BEAED5" stroke-opacity=".8">
+        <animateTransform attributeName="transform" type="translate"
+          values="0 0;32 0;32 0;0 0"
+          keyTimes="0;.18;.65;1" dur="3.2s"
+          begin=".035s" repeatCount="indefinite"/>
+      </polygon>
+
+      <!-- Lower-left armor shard -->
+      <polygon points="396,208 450,176 510,194 570,208 535,251 470,251"
+               fill="#211832" stroke="#BEAED5" stroke-opacity=".8">
+        <animateTransform attributeName="transform" type="translate"
+          values="0 0;-24 20;-24 20;0 0"
+          keyTimes="0;.18;.65;1" dur="3.2s"
+          begin=".06s" repeatCount="indefinite"/>
+      </polygon>
+
+      <!-- Lower-center armor shard -->
+      <polygon points="510,194 570,208 630,208 690,229 665,251 535,251"
+               fill="#151124" stroke="#E8D5EF" stroke-opacity=".65">
+        <animateTransform attributeName="transform" type="translate"
+          values="0 0;0 27;0 27;0 0"
+          keyTimes="0;.18;.65;1" dur="3.2s"
+          begin=".03s" repeatCount="indefinite"/>
+      </polygon>
+
+      <!-- Lower-right armor shard -->
+      <polygon points="690,160 750,176 804,208 730,251 665,251 630,208"
+               fill="#171226" stroke="#BEAED5" stroke-opacity=".8">
+        <animateTransform attributeName="transform" type="translate"
+          values="0 0;25 20;25 20;0 0"
+          keyTimes="0;.18;.65;1" dur="3.2s"
+          begin=".07s" repeatCount="indefinite"/>
+      </polygon>
+
+      <!-- SMALL FRACTURE DEBRIS: upper-left -->
+      <g fill="#E8D5EF" stroke="#BEAED5" stroke-width=".7">
+        <polygon points="482,103 496,99 490,114">
+          <animateTransform attributeName="transform" type="translate"
+            values="0 0;-43 -39; -43 -39;0 0"
+            keyTimes="0;.18;.6;1" dur="3.2s" repeatCount="indefinite"/>
+          <animate attributeName="opacity"
+            values="0;1;0;0" keyTimes="0;.12;.32;1"
+            dur="3.2s" repeatCount="indefinite"/>
+        </polygon>
+
+        <polygon points="525,120 537,114 534,130">
+          <animateTransform attributeName="transform" type="translate"
+            values="0 0;-19 -48;-19 -48;0 0"
+            keyTimes="0;.18;.6;1" dur="3.2s"
+            begin=".025s" repeatCount="indefinite"/>
+          <animate attributeName="opacity"
+            values="0;1;0;0" keyTimes="0;.12;.31;1"
+            dur="3.2s" repeatCount="indefinite"/>
+        </polygon>
+
+        <polygon points="458,120 471,127 455,135">
+          <animateTransform attributeName="transform" type="translate"
+            values="0 0;-48 -10;-48 -10;0 0"
+            keyTimes="0;.18;.6;1" dur="3.2s"
+            begin=".04s" repeatCount="indefinite"/>
+          <animate attributeName="opacity"
+            values="0;1;0;0" keyTimes="0;.12;.3;1"
+            dur="3.2s" repeatCount="indefinite"/>
+        </polygon>
+
+        <!-- Upper-right -->
+        <polygon points="705,105 719,100 715,116">
+          <animateTransform attributeName="transform" type="translate"
+            values="0 0;37 -40;37 -40;0 0"
+            keyTimes="0;.18;.6;1" dur="3.2s"
+            begin=".035s" repeatCount="indefinite"/>
+          <animate attributeName="opacity"
+            values="0;1;0;0" keyTimes="0;.12;.32;1"
+            dur="3.2s" repeatCount="indefinite"/>
+        </polygon>
+
+        <polygon points="744,126 760,120 755,136">
+          <animateTransform attributeName="transform" type="translate"
+            values="0 0;49 -14;49 -14;0 0"
+            keyTimes="0;.18;.6;1" dur="3.2s"
+            begin=".055s" repeatCount="indefinite"/>
+          <animate attributeName="opacity"
+            values="0;1;0;0" keyTimes="0;.12;.3;1"
+            dur="3.2s" repeatCount="indefinite"/>
+        </polygon>
+
+        <!-- Left side -->
+        <polygon points="445,145 459,151 444,158">
+          <animateTransform attributeName="transform" type="translate"
+            values="0 0;-54 -3;-54 -3;0 0"
+            keyTimes="0;.18;.6;1" dur="3.2s"
+            begin=".015s" repeatCount="indefinite"/>
+          <animate attributeName="opacity"
+            values="0;1;0;0" keyTimes="0;.12;.3;1"
+            dur="3.2s" repeatCount="indefinite"/>
+        </polygon>
+
+        <polygon points="468,178 480,169 480,185">
+          <animateTransform attributeName="transform" type="translate"
+            values="0 0;-41 18;-41 18;0 0"
+            keyTimes="0;.18;.6;1" dur="3.2s"
+            begin=".045s" repeatCount="indefinite"/>
+          <animate attributeName="opacity"
+            values="0;1;0;0" keyTimes="0;.12;.32;1"
+            dur="3.2s" repeatCount="indefinite"/>
+        </polygon>
+
+        <!-- Right side -->
+        <polygon points="741,157 755,150 753,166">
+          <animateTransform attributeName="transform" type="translate"
+            values="0 0;50 1;50 1;0 0"
+            keyTimes="0;.18;.6;1" dur="3.2s"
+            begin=".03s" repeatCount="indefinite"/>
+          <animate attributeName="opacity"
+            values="0;1;0;0" keyTimes="0;.12;.3;1"
+            dur="3.2s" repeatCount="indefinite"/>
+        </polygon>
+
+        <polygon points="715,181 730,175 727,192">
+          <animateTransform attributeName="transform" type="translate"
+            values="0 0;42 22;42 22;0 0"
+            keyTimes="0;.18;.6;1" dur="3.2s"
+            begin=".065s" repeatCount="indefinite"/>
+          <animate attributeName="opacity"
+            values="0;1;0;0" keyTimes="0;.12;.32;1"
+            dur="3.2s" repeatCount="indefinite"/>
+        </polygon>
+
+        <!-- Lower-left -->
+        <polygon points="480,199 493,193 490,209">
+          <animateTransform attributeName="transform" type="translate"
+            values="0 0;-39 33;-39 33;0 0"
+            keyTimes="0;.18;.6;1" dur="3.2s"
+            begin=".035s" repeatCount="indefinite"/>
+          <animate attributeName="opacity"
+            values="0;1;0;0" keyTimes="0;.12;.3;1"
+            dur="3.2s" repeatCount="indefinite"/>
+        </polygon>
+
+        <polygon points="523,218 537,212 533,229">
+          <animateTransform attributeName="transform" type="translate"
+            values="0 0;-20 43;-20 43;0 0"
+            keyTimes="0;.18;.6;1" dur="3.2s"
+            begin=".055s" repeatCount="indefinite"/>
+          <animate attributeName="opacity"
+            values="0;1;0;0" keyTimes="0;.12;.31;1"
+            dur="3.2s" repeatCount="indefinite"/>
+        </polygon>
+
+        <!-- Lower-right -->
+        <polygon points="677,216 692,210 687,227">
+          <animateTransform attributeName="transform" type="translate"
+            values="0 0;20 44;20 44;0 0"
+            keyTimes="0;.18;.6;1" dur="3.2s"
+            begin=".045s" repeatCount="indefinite"/>
+          <animate attributeName="opacity"
+            values="0;1;0;0" keyTimes="0;.12;.32;1"
+            dur="3.2s" repeatCount="indefinite"/>
+        </polygon>
+
+        <polygon points="713,199 728,194 724,210">
+          <animateTransform attributeName="transform" type="translate"
+            values="0 0;41 32;41 32;0 0"
+            keyTimes="0;.18;.6;1" dur="3.2s"
+            begin=".07s" repeatCount="indefinite"/>
+          <animate attributeName="opacity"
+            values="0;1;0;0" keyTimes="0;.12;.3;1"
+            dur="3.2s" repeatCount="indefinite"/>
+        </polygon>
+      </g>
+
+      <!-- EXTRA DARK FRAGMENTS -->
+      <g fill="#08080F" stroke="#BEAED5" stroke-width=".8">
+        <polygon points="500,132 513,126 508,142">
+          <animateTransform attributeName="transform" type="translate"
+            values="0 0;-29 -18;-29 -18;0 0"
+            keyTimes="0;.18;.6;1" dur="3.2s" repeatCount="indefinite"/>
+          <animate attributeName="opacity"
+            values=".9;1;0;0" keyTimes="0;.12;.31;1"
+            dur="3.2s" repeatCount="indefinite"/>
+        </polygon>
+
+        <polygon points="700,132 714,126 710,143">
+          <animateTransform attributeName="transform" type="translate"
+            values="0 0;32 -21;32 -21;0 0"
+            keyTimes="0;.18;.6;1" dur="3.2s"
+            begin=".035s" repeatCount="indefinite"/>
+          <animate attributeName="opacity"
+            values=".9;1;0;0" keyTimes="0;.12;.31;1"
+            dur="3.2s" repeatCount="indefinite"/>
+        </polygon>
+
+        <polygon points="494,183 507,178 503,194">
+          <animateTransform attributeName="transform" type="translate"
+            values="0 0;-35 17;-35 17;0 0"
+            keyTimes="0;.18;.6;1" dur="3.2s"
+            begin=".045s" repeatCount="indefinite"/>
+          <animate attributeName="opacity"
+            values=".9;1;0;0" keyTimes="0;.12;.31;1"
+            dur="3.2s" repeatCount="indefinite"/>
+        </polygon>
+
+        <polygon points="690,184 703,178 700,195">
+          <animateTransform attributeName="transform" type="translate"
+            values="0 0;34 19;34 19;0 0"
+            keyTimes="0;.18;.6;1" dur="3.2s"
+            begin=".065s" repeatCount="indefinite"/>
+          <animate attributeName="opacity"
+            values=".9;1;0;0" keyTimes="0;.12;.31;1"
+            dur="3.2s" repeatCount="indefinite"/>
+        </polygon>
+      </g>
+
+      <!-- FAST CENTRAL IMPACT FLASH -->
+      <rect x="395" y="153" width="410" height="14"
+            fill="url(#impactGlow)" opacity="0"
+            filter="url(#hardGlow)">
+        <animate attributeName="opacity"
+          values="0;0;1;.75;0;0"
+          keyTimes="0;.15;.17;.2;.27;1"
+          dur="3.2s" repeatCount="indefinite"/>
+        <animate attributeName="height"
+          values="2;2;20;5;2;2"
+          keyTimes="0;.15;.17;.2;.27;1"
+          dur="3.2s" repeatCount="indefinite"/>
+        <animate attributeName="y"
+          values="159;159;150;157;159;159"
+          keyTimes="0;.15;.17;.2;.27;1"
+          dur="3.2s" repeatCount="indefinite"/>
+      </rect>
+
+      <!-- Main collision beam -->
+      <path d="M400 160H800"
+            stroke="#FFFFFF" stroke-width="3"
+            stroke-linecap="square" opacity="0">
+        <animate attributeName="opacity"
+          values="0;0;1;.6;0;0"
+          keyTimes="0;.15;.17;.195;.25;1"
+          dur="3.2s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-width"
+          values="1;1;5;1;1"
+          keyTimes="0;.15;.17;.22;1"
+          dur="3.2s" repeatCount="indefinite"/>
+      </path>
+
+      <!-- Fracture lightning -->
+      <path d="M530 103L578 145L558 167L620 188L670 218"
+            fill="none" stroke="#E8D5EF" stroke-width="1.7"
+            stroke-linecap="square" opacity=".2">
+        <animate attributeName="opacity"
+          values=".2;.2;1;.3;.2"
+          keyTimes="0;.14;.18;.32;1"
+          dur="3.2s" repeatCount="indefinite"/>
+      </path>
+
+      <path d="M681 99L650 133L675 153L635 178L654 204"
+            fill="none" stroke="#BEAED5" stroke-width="1.4"
+            stroke-linecap="square" opacity=".15">
+        <animate attributeName="opacity"
+          values=".15;.15;1;.2;.15"
+          keyTimes="0;.14;.18;.32;1"
+          dur="3.2s" repeatCount="indefinite"/>
+      </path>
+
+      
+     <!-- DIGITAL DISPLACEMENT BARS: TEXT-SAFE -->
+     <g fill="#E8D5EF" opacity="0">
+       <rect x="350" y="108" width="125" height="3"/>
+       <rect x="725" y="108" width="125" height="3"/>
      
-<!-- DIMENSION GATE: FRACTURE SEQUENCE -->
-<g id="dimension-gate">
-
-  <!-- Dark opening behind the shards -->
-  <path d="M470 69H730L804 112V208L730 251H470L396 208V112Z"
-        fill="#08080F" stroke="#BEAED5"
-        stroke-opacity=".55" stroke-width="1.5"/>
-
-  <!-- Inner depth aperture -->
-  <path d="M510 91H690L750 126V194L690 229H510L450 194V126Z"
-        fill="#0D0C1A" stroke="#AAA5B9"
-        stroke-opacity=".35"/>
-
-  <!-- Upper-left shard -->
-  <polygon points="470,69 535,69 570,112 510,126 450,112 396,112"
-           fill="#151124" stroke="#BEAED5" stroke-opacity=".8">
-    <animateTransform attributeName="transform" type="translate"
-      values="0 0; -17 -13; -17 -13; 0 0"
-      keyTimes="0;0.2;0.72;1" dur="4.8s" repeatCount="indefinite"/>
-    <animate attributeName="opacity"
-      values="1;1;.82;1" dur="4.8s" repeatCount="indefinite"/>
-  </polygon>
-
-  <!-- Upper-center shard -->
-  <polygon points="535,69 665,69 690,91 630,112 570,112"
-           fill="#211832" stroke="#E8D5EF" stroke-opacity=".7">
-    <animateTransform attributeName="transform" type="translate"
-      values="0 0; 0 -19; 0 -19; 0 0"
-      keyTimes="0;0.2;0.72;1" dur="4.8s"
-      begin=".04s" repeatCount="indefinite"/>
-  </polygon>
-
-  <!-- Upper-right shard -->
-  <polygon points="665,69 730,69 804,112 750,126 690,112"
-           fill="#171226" stroke="#BEAED5" stroke-opacity=".8">
-    <animateTransform attributeName="transform" type="translate"
-      values="0 0; 18 -12; 18 -12; 0 0"
-      keyTimes="0;0.2;0.72;1" dur="4.8s"
-      begin=".08s" repeatCount="indefinite"/>
-  </polygon>
-
-  <!-- Left-side shard -->
-  <polygon points="396,112 450,112 510,126 510,160 450,176 396,208"
-           fill="#171226" stroke="#BEAED5" stroke-opacity=".8">
-    <animateTransform attributeName="transform" type="translate"
-      values="0 0; -24 0; -24 0; 0 0"
-      keyTimes="0;0.2;0.72;1" dur="4.8s"
-      begin=".02s" repeatCount="indefinite"/>
-  </polygon>
-
-  <!-- Right-side shard -->
-  <polygon points="690,112 750,126 804,112 804,208 750,176 690,160"
-           fill="#171226" stroke="#BEAED5" stroke-opacity=".8">
-    <animateTransform attributeName="transform" type="translate"
-      values="0 0; 24 0; 24 0; 0 0"
-      keyTimes="0;0.2;0.72;1" dur="4.8s"
-      begin=".06s" repeatCount="indefinite"/>
-  </polygon>
-
-  <!-- Lower-left shard -->
-  <polygon points="396,208 450,176 510,194 570,208 535,251 470,251"
-           fill="#211832" stroke="#BEAED5" stroke-opacity=".8">
-    <animateTransform attributeName="transform" type="translate"
-      values="0 0; -17 14; -17 14; 0 0"
-      keyTimes="0;0.2;0.72;1" dur="4.8s"
-      begin=".1s" repeatCount="indefinite"/>
-  </polygon>
-
-  <!-- Lower-center shard -->
-  <polygon points="510,194 570,208 630,208 690,229 665,251 535,251"
-           fill="#151124" stroke="#E8D5EF" stroke-opacity=".65">
-    <animateTransform attributeName="transform" type="translate"
-      values="0 0; 0 19; 0 19; 0 0"
-      keyTimes="0;0.2;0.72;1" dur="4.8s"
-      begin=".05s" repeatCount="indefinite"/>
-  </polygon>
-
-  <!-- Lower-right shard -->
-  <polygon points="690,160 750,176 804,208 730,251 665,251 630,208"
-           fill="#171226" stroke="#BEAED5" stroke-opacity=".8">
-    <animateTransform attributeName="transform" type="translate"
-      values="0 0; 18 14; 18 14; 0 0"
-      keyTimes="0;0.2;0.72;1" dur="4.8s"
-      begin=".12s" repeatCount="indefinite"/>
-  </polygon>
-
-  <!-- Energy flash across the aperture -->
-  <path d="M450 160H750"
-        fill="none" stroke="#E8D5EF" stroke-width="2"
-        stroke-linecap="square" opacity="0">
-    <animate attributeName="opacity"
-      values="0;0;1;.15;0;0"
-      keyTimes="0;.16;.21;.29;.4;1"
-      dur="4.8s" repeatCount="indefinite"/>
-  </path>
-
-  <!-- Fine energy fracture -->
-  <path d="M530 103L578 145L558 167L620 188L670 218"
-        fill="none" stroke="#BEAED5" stroke-width="1.5"
-        stroke-linecap="square" opacity=".2">
-    <animate attributeName="opacity"
-      values=".2;.2;1;.3;.2"
-      keyTimes="0;.16;.23;.38;1"
-      dur="4.8s" repeatCount="indefinite"/>
-  </path>
-
-</g>
+       <rect x="390" y="151" width="105" height="2"/>
+       <rect x="705" y="151" width="105" height="2"/>
+     
+       <rect x="330" y="205" width="145" height="4"/>
+       <rect x="725" y="205" width="145" height="4"/>
+     
+       <rect x="445" y="132" width="55" height="1.5"/>
+       <rect x="700" y="132" width="55" height="1.5"/>
+     
+       <rect x="375" y="188" width="115" height="2"/>
+       <rect x="710" y="188" width="115" height="2"/>
+     
+       <animate attributeName="opacity"
+         values="0;0;.95;0;0;.8;0"
+         keyTimes="0;.15;.17;.19;.39;.41;1"
+         dur="3.2s" repeatCount="indefinite"/>
+     </g>
 
 
+      <!-- Ghost contours / violent digital offset -->
+      <g fill="none" stroke="#E8D5EF"
+         stroke-width="1.5" opacity="0">
+        <path d="M470 69H730L804 112V208L730 251H470L396 208V112Z">
+          <animateTransform attributeName="transform"
+            type="translate"
+            values="0 0;0 0;-17 3;12 -2;0 0;0 0"
+            keyTimes="0;.15;.17;.19;.22;1"
+            dur="3.2s" repeatCount="indefinite"/>
+        </path>
+        <animate attributeName="opacity"
+          values="0;0;1;.35;0;0"
+          keyTimes="0;.15;.17;.2;.25;1"
+          dur="3.2s" repeatCount="indefinite"/>
+      </g>
 
-    <!-- Circuit traces: left -->
+      <!-- Shockwave ring -->
+      <path d="M600 107L653 137L653 183L600 213L547 183L547 137Z"
+            fill="none" stroke="#E8D5EF"
+            stroke-width="2" opacity="0">
+        <animate attributeName="opacity"
+          values="0;0;.9;.35;0;0"
+          keyTimes="0;.15;.17;.22;.3;1"
+          dur="3.2s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform"
+          type="translate"
+          values="0 0;0 0;0 -3;0 0;0 0"
+          keyTimes="0;.15;.17;.23;1"
+          dur="3.2s" repeatCount="indefinite"/>
+      </path>
+
+      <!-- Angular impact burst -->
+      <path d="M600 128L608 151L632 143L615 160L638 168L612 170L600 193L588 170L562 168L585 160L568 143L592 151Z"
+            fill="#E8D5EF" opacity="0"
+            transform="translate(600 160) scale(.01) translate(-600 -160)">
+        <animate attributeName="opacity"
+          values="0;0;1;.35;0;0"
+          keyTimes="0;.15;.17;.2;.25;1"
+          dur="3.2s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform"
+          type="scale"
+          values=".01;.01;1.35;1.8"
+          keyTimes="0;.15;.18;.23"
+          dur="3.2s" repeatCount="indefinite"
+          additive="sum"/>
+      </path>
+
+      <!-- Impact sparks -->
+      <g fill="none" stroke="#BEAED5"
+         stroke-width="2" stroke-linecap="square"
+         opacity="0">
+        <path d="M470 138L445 130L432 114"/>
+        <path d="M730 138L755 130L768 114"/>
+        <path d="M470 182L445 190L432 206"/>
+        <path d="M730 182L755 190L768 206"/>
+        <path d="M535 113L521 94L522 82"/>
+        <path d="M665 113L679 94L678 82"/>
+        <path d="M535 207L521 226L522 238"/>
+        <path d="M665 207L679 226L678 238"/>
+        <animate attributeName="opacity"
+          values="0;0;1;.15;0;0"
+          keyTimes="0;.15;.17;.22;.28;1"
+          dur="3.2s" repeatCount="indefinite"/>
+      </g>
+
+      <!-- Brief RGB-like ghost displacement -->
+      <g fill="none" stroke="#BEAED5"
+         stroke-width="2" opacity="0">
+        <path d="M450 126H750V194H450Z">
+          <animateTransform attributeName="transform"
+            type="translate"
+            values="0 0;-10 0;8 1;0 0"
+            keyTimes="0;.17;.19;.23"
+            dur="3.2s" repeatCount="indefinite"/>
+        </path>
+        <animate attributeName="opacity"
+          values="0;0;.8;0;0"
+          keyTimes="0;.15;.17;.22;1"
+          dur="3.2s" repeatCount="indefinite"/>
+      </g>
+
+    </g>
+
+    <!-- CIRCUIT TRACES: LEFT -->
     <g fill="none" stroke="#BEAED5"
        stroke-width="1" stroke-opacity=".42">
       <path d="M0 84H105L137 116H218"/>
@@ -192,7 +515,7 @@
       <path d="M177 0V22L196 41V58"/>
     </g>
 
-    <!-- Circuit traces: right -->
+    <!-- CIRCUIT TRACES: RIGHT -->
     <g fill="none" stroke="#BEAED5"
        stroke-width="1" stroke-opacity=".42">
       <path d="M1200 84H1095L1063 116H982"/>
@@ -204,7 +527,7 @@
       <path d="M1023 0V22L1004 41V58"/>
     </g>
 
-    <!-- Circuit nodes -->
+    <!-- CIRCUIT NODES -->
     <g fill="#E8D5EF">
       <circle cx="105" cy="84" r="2"/>
       <circle cx="218" cy="116" r="2"/>
@@ -216,7 +539,7 @@
       <circle cx="996" cy="230" r="2"/>
     </g>
 
-    <!-- Peripheral data markers -->
+    <!-- PERIPHERAL DATA MARKERS -->
     <g stroke="#AAA5B9" stroke-opacity=".3" fill="none">
       <path d="M50 150H142 M50 156H105 M50 162H126"/>
       <path d="M1150 150H1058 M1150 156H1095 M1150 162H1074"/>
@@ -224,7 +547,7 @@
       <path d="M1138 175H1084 M1138 181H1106"/>
     </g>
 
-    <!-- Outer chassis -->
+    <!-- OUTER CHASSIS -->
     <rect x="18" y="18" width="1164" height="284" rx="4"
           fill="none" stroke="#AAA5B9"
           stroke-opacity=".42"/>
@@ -236,7 +559,7 @@
           fill="none" stroke="url(#edge)"
           stroke-width="1.5"/>
 
-    <!-- Corner accents: kept away from text -->
+    <!-- CORNER ACCENTS -->
     <g fill="none" stroke="#BEAED5"
        stroke-width="2" stroke-linecap="square">
       <path d="M30 49V30H49"/>
@@ -245,10 +568,9 @@
       <path d="M1151 290H1170V271"/>
     </g>
 
-    <!-- Top status strip -->
+    <!-- TOP STATUS STRIP -->
     <path d="M62 80H1138"
           stroke="url(#edge)" stroke-opacity=".65"/>
-
     <path d="M62 80H290"
           stroke="#E8D5EF" stroke-width="1.5"/>
 
@@ -259,7 +581,7 @@
             text-anchor="end">K-001 // PROFILE</text>
     </g>
 
-    <!-- Small system markers -->
+    <!-- SYSTEM MARKERS -->
     <g fill="#BEAED5">
       <rect x="70" y="90" width="5" height="5"/>
       <rect x="79" y="90" width="5" height="5" opacity=".5"/>
@@ -269,11 +591,11 @@
       <rect x="1125" y="90" width="5" height="5"/>
     </g>
 
-    <!-- Name backing and subtle light -->
+    <!-- NAME BACKING -->
     <path d="M360 98H840L820 190H380Z"
           fill="url(#panelGlow)" opacity=".55"/>
 
-    <!-- Main identity -->
+    <!-- MAIN IDENTITY -->
     <text x="600" y="157"
           font-family="Orbitron, Rajdhani, Arial, sans-serif"
           font-size="82" font-weight="900"
@@ -281,15 +603,14 @@
           fill="#FFFFFF"
           text-anchor="middle">katana.</text>
 
-    <!-- Name underline -->
+    <!-- NAME UNDERLINE -->
     <path d="M464 178H736"
           stroke="#BEAED5" stroke-width="1.5"
           filter="url(#glow)"/>
-
     <path d="M464 184H510 M690 184H736"
           stroke="#AAA5B9" stroke-opacity=".55"/>
 
-    <!-- Role -->
+    <!-- ROLE -->
     <text x="600" y="214"
           font-family="Orbitron, Rajdhani, Arial, sans-serif"
           font-size="21" font-weight="700"
@@ -297,17 +618,16 @@
           fill="#E8D5EF"
           text-anchor="middle">DATA ENGINEER</text>
 
-    <!-- Specialization -->
+    <!-- SPECIALIZATION -->
     <text x="600" y="241"
           font-family="monospace"
           font-size="11" letter-spacing="2.6"
           fill="#AAA5B9"
           text-anchor="middle">DATA / SYSTEMS / ARCHITECTURE</text>
 
-    <!-- Bottom status strip -->
+    <!-- BOTTOM STATUS STRIP -->
     <path d="M62 259H1138"
           stroke="#AAA5B9" stroke-opacity=".3"/>
-
     <path d="M62 259H280"
           stroke="#BEAED5" stroke-opacity=".75"/>
 
@@ -328,7 +648,7 @@
           letter-spacing="1.4"
           fill="#AAA5B9" text-anchor="end">BUILDING THE UNKNOWN</text>
 
-    <!-- Moving scan beam -->
+    <!-- MOVING SCAN BEAM: ORIGINAL SPEED PRESERVED -->
     <rect x="20" y="18" width="1160" height="18"
           fill="url(#panelGlow)" opacity=".45">
       <animate attributeName="y"
@@ -336,7 +656,7 @@
                dur="10s" repeatCount="indefinite"/>
     </rect>
 
-    <!-- Fine terminal scanlines -->
+    <!-- FINE TERMINAL SCANLINES -->
     <g stroke="#FFFFFF" stroke-opacity=".025">
       <path d="M20 105H1180"/>
       <path d="M20 109H1180"/>
