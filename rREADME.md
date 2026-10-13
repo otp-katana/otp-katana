@@ -55,27 +55,27 @@ Project ACE is a real-time global data terminal built to explore the events shap
         <a href="https://github.com/otp-katana/PROJECT-ACE---All-Covering-Eye-Real-Time-Global-Data-Terminal">
           Explore the project ↗
         </a>
-      </p><td width="40%" valign="top" align="center">
+      </p>
+<td width="40%" valign="top" align="center">
   <img
     src="./assets/ace-terminal.svg"
     width="100%"
     alt="Project ACE global monitoring terminal"
   />
-  <br/>
+  <br/><br/>
   <img
     src="./assets/ace-explorer.svg"
     width="100%"
     alt="Project ACE animated spatial explorer"
   />
-       
-<br/>
-<img
-  src="./assets/ace-ticker.svg"
-  width="100%"
-  alt="Oktay Sinanoğlu'nun Türkçe, kültür ve kimlik üzerine sözlerinden oluşan kayan yazı bandı"
-/>
-
+  <br/><br/>
+  <img
+    src="./assets/ace-ticker.svg"
+    width="100%"
+    alt="Scrolling quotation about language, culture and identity"
+  />
 </td>
+
   </tr>
 </table>
 
