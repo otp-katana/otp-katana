@@ -1,0 +1,226 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="360" viewBox="0 0 820 360" fill="none">
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#11101D"/>
+      <stop offset="1" stop-color="#090811"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#AAA5B9" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#BEAED5"/>
+      <stop offset="1" stop-color="#E8D5EF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#BEAED5"/>
+      <stop offset="1" stop-color="#E8D5EF"/>
+    </linearGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" stroke="#AAA5B9" stroke-opacity=".055" stroke-width=".7"/>
+    </pattern>
+    <clipPath id="screen">
+      <rect x="1" y="1" width="818" height="358" rx="12"/>
+    </clipPath>
+  </defs>
+
+  <!-- Outer shell -->
+  <rect width="820" height="360" rx="12" fill="#08080F"/>
+  <g clip-path="url(#screen)">
+    <rect width="820" height="360" fill="url(#grid)"/>
+
+    <!-- Header -->
+    <path d="M1 47H819" stroke="#AAA5B9" stroke-opacity=".35"/>
+    <rect x="1" y="1" width="818" height="46" fill="#0D0C1A"/>
+
+    <circle cx="22" cy="24" r="4" fill="#BEAED5"/>
+    <circle cx="36" cy="24" r="4" fill="#AAA5B9" opacity=".55"/>
+    <circle cx="50" cy="24" r="4" fill="#AAA5B9" opacity=".3"/>
+
+    <g font-family="monospace" fill="#E8D5EF">
+      <text x="70" y="22" font-size="11" letter-spacing="1.7">ACE // GITHUB SIGNAL</text>
+      <text x="70" y="35" font-size="8" letter-spacing="1.3" fill="#AAA5B9">DEVELOPER ACTIVITY MONITOR</text>
+    </g>
+
+    <circle cx="620" cy="23" r="3" fill="#BEAED5">
+      <animate attributeName="opacity" values="1;.25;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="631" y="26" font-family="monospace" font-size="9" fill="#BEAED5" letter-spacing="1">SIGNAL ACTIVE</text>
+    <path d="M741 16h55v16h-55z" stroke="#AAA5B9" stroke-opacity=".4"/>
+    <text x="768" y="27" text-anchor="middle" font-family="monospace" font-size="8" fill="#AAA5B9">SYS.01</text>
+
+    <!-- Main terminal -->
+    <rect x="18" y="61" width="494" height="222" rx="5" fill="url(#panel)" stroke="#AAA5B9" stroke-opacity=".42"/>
+    <path d="M18 91H512" stroke="#AAA5B9" stroke-opacity=".3"/>
+    <text x="31" y="80" font-family="monospace" font-size="9" fill="#AAA5B9" letter-spacing="1.2">/var/ace/github/stream.log</text>
+    <text x="496" y="80" text-anchor="end" font-family="monospace" font-size="8" fill="#AAA5B9">READ ONLY</text>
+
+    <!-- Log lines -->
+    <g font-family="monospace" font-size="10">
+      <text x="32" y="112" fill="#AAA5B9">[00:00:01]</text>
+      <text x="112" y="112" fill="#BEAED5">[INIT]</text>
+      <text x="164" y="112" fill="#E8D5EF">GITHUB SIGNAL INITIALIZED</text>
+
+      <text x="32" y="137" fill="#AAA5B9">[00:00:02]</text>
+      <text x="112" y="137" fill="#BEAED5">[AUTH]</text>
+      <text x="164" y="137" fill="#E8D5EF">PUBLIC PROFILE CONNECTED</text>
+
+      <text x="32" y="162" fill="#AAA5B9">[00:00:03]</text>
+      <text x="112" y="162" fill="#BEAED5">[SCAN]</text>
+      <text x="164" y="162" fill="#E8D5EF">REPOSITORY INDEX READY</text>
+
+      <text x="32" y="187" fill="#AAA5B9">[00:00:04]</text>
+      <text x="112" y="187" fill="#BEAED5">[SYNC]</text>
+      <text x="164" y="187" fill="#E8D5EF">ACTIVITY STREAM MONITORED</text>
+
+      <text x="32" y="212" fill="#AAA5B9">[00:00:05]</text>
+      <text x="112" y="212" fill="#BEAED5">[SYS ]</text>
+      <text x="164" y="212" fill="#E8D5EF">ALL SYSTEMS OPERATIONAL</text>
+
+      <text x="32" y="249" fill="#AAA5B9">root@ace:~$</text>
+      <text x="122" y="249" fill="#E8D5EF">observe --github --live</text>
+      <rect x="263" y="239" width="7" height="13" fill="#BEAED5">
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- Scanning sweep -->
+    <rect x="20" y="94" width="490" height="1" fill="url(#signal)" opacity=".7">
+      <animate attributeName="y" values="95;273;95" dur="7s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Right status panel -->
+    <rect x="526" y="61" width="276" height="105" rx="5" fill="#0D0C1A" stroke="#AAA5B9" stroke-opacity=".42"/>
+    <text x="540" y="81" font-family="monospace" font-size="9" fill="#AAA5B9" letter-spacing="1.2">CONNECTION STATUS</text>
+    <path d="M540 90H788" stroke="#AAA5B9" stroke-opacity=".25"/>
+
+    <circle cx="547" cy="108" r="4" fill="#BEAED5">
+      <animate attributeName="opacity" values="1;.3;1" dur="1.7s" repeatCount="indefinite"/>
+    </circle>
+    <text x="559" y="111" font-family="monospace" font-size="10" fill="#E8D5EF">PROFILE LINK</text>
+    <text x="788" y="111" text-anchor="end" font-family="monospace" font-size="9" fill="#BEAED5">ESTABLISHED</text>
+
+    <circle cx="547" cy="132" r="4" fill="#BEAED5"/>
+    <text x="559" y="135" font-family="monospace" font-size="10" fill="#E8D5EF">DATA CHANNEL</text>
+    <text x="788" y="135" text-anchor="end" font-family="monospace" font-size="9" fill="#BEAED5">STANDBY</text>
+
+    <path d="M540 151H788" stroke="#AAA5B9" stroke-opacity=".15"/>
+    <text x="540" y="160" font-family="monospace" font-size="7" fill="#AAA5B9">ENCRYPTION: N/A · PUBLIC DATA VIEW</text>
+
+    <!-- Telemetry panel -->
+    <rect x="526" y="178" width="276" height="105" rx="5" fill="#0D0C1A" stroke="#AAA5B9" stroke-opacity=".42"/>
+    <text x="540" y="197" font-family="monospace" font-size="9" fill="#AAA5B9" letter-spacing="1.2">SIGNAL TELEMETRY</text>
+    <path d="M540 205H788" stroke="#AAA5B9" stroke-opacity=".25"/>
+
+    <g font-family="monospace">
+      <text x="540" y="224" font-size="9" fill="#AAA5B9">PACKET FLOW</text>
+      <text x="788" y="224" text-anchor="end" font-size="9" fill="#E8D5EF">NOMINAL</text>
+      <rect x="540" y="232" width="248" height="4" rx="2" fill="#252236"/>
+      <rect x="540" y="232" width="174" height="4" rx="2" fill="url(#bar)">
+        <animate attributeName="width" values="130;205;166;190;130" dur="4s" repeatCount="indefinite"/>
+      </rect>
+
+      <text x="540" y="255" font-size="9" fill="#AAA5B9">INDEX STATUS</text>
+      <text x="788" y="255" text-anchor="end" font-size="9" fill="#BEAED5">MONITORING</text>
+      <rect x="540" y="263" width="248" height="4" rx="2" fill="#252236"/>
+      <rect x="540" y="263" width="215" height="4" rx="2" fill="#AAA5B9" opacity=".8">
+        <animate attributeName="width" values="180;230;198;215;180" dur="5s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- Contribution matrix -->
+    <rect x="18" y="296" width="784" height="47" rx="5" fill="#0D0C1A" stroke="#AAA5B9" stroke-opacity=".42"/>
+    <text x="31" y="313" font-family="monospace" font-size="8" fill="#AAA5B9" letter-spacing="1">ACTIVITY MATRIX</text>
+    <text x="31" y="330" font-family="monospace" font-size="8" fill="#BEAED5">SIGNAL DENSITY</text>
+
+    <g transform="translate(173 307)">
+      <rect x="0" y="0" width="8" height="8" rx="1" fill="#252236"/>
+      <rect x="12" y="0" width="8" height="8" rx="1" fill="#514B68"/>
+      <rect x="24" y="0" width="8" height="8" rx="1" fill="#AAA5B9"/>
+      <rect x="36" y="0" width="8" height="8" rx="1" fill="#252236"/>
+      <rect x="48" y="0" width="8" height="8" rx="1" fill="#BEAED5"/>
+      <rect x="60" y="0" width="8" height="8" rx="1" fill="#514B68"/>
+      <rect x="72" y="0" width="8" height="8" rx="1" fill="#252236"/>
+      <rect x="84" y="0" width="8" height="8" rx="1" fill="#AAA5B9"/>
+      <rect x="96" y="0" width="8" height="8" rx="1" fill="#514B68"/>
+      <rect x="108" y="0" width="8" height="8" rx="1" fill="#252236"/>
+      <rect x="120" y="0" width="8" height="8" rx="1" fill="#BEAED5"/>
+      <rect x="132" y="0" width="8" height="8" rx="1" fill="#514B68"/>
+      <rect x="144" y="0" width="8" height="8" rx="1" fill="#AAA5B9"/>
+      <rect x="156" y="0" width="8" height="8" rx="1" fill="#252236"/>
+      <rect x="168" y="0" width="8" height="8" rx="1" fill="#514B68"/>
+      <rect x="180" y="0" width="8" height="8" rx="1" fill="#BEAED5"/>
+      <rect x="192" y="0" width="8" height="8" rx="1" fill="#252236"/>
+      <rect x="204" y="0" width="8" height="8" rx="1" fill="#AAA5B9"/>
+      <rect x="216" y="0" width="8" height="8" rx="1" fill="#514B68"/>
+      <rect x="228" y="0" width="8" height="8" rx="1" fill="#252236"/>
+      <rect x="240" y="0" width="8" height="8" rx="1" fill="#BEAED5"/>
+      <rect x="252" y="0" width="8" height="8" rx="1" fill="#514B68"/>
+      <rect x="264" y="0" width="8" height="8" rx="1" fill="#AAA5B9"/>
+      <rect x="276" y="0" width="8" height="8" rx="1" fill="#252236"/>
+      <rect x="288" y="0" width="8" height="8" rx="1" fill="#514B68"/>
+      <rect x="300" y="0" width="8" height="8" rx="1" fill="#BEAED5"/>
+      <rect x="312" y="0" width="8" height="8" rx="1" fill="#252236"/>
+      <rect x="324" y="0" width="8" height="8" rx="1" fill="#AAA5B9"/>
+      <rect x="336" y="0" width="8" height="8" rx="1" fill="#514B68"/>
+      <rect x="348" y="0" width="8" height="8" rx="1" fill="#252236"/>
+      <rect x="360" y="0" width="8" height="8" rx="1" fill="#BEAED5"/>
+      <rect x="372" y="0" width="8" height="8" rx="1" fill="#514B68"/>
+      <rect x="384" y="0" width="8" height="8" rx="1" fill="#AAA5B9"/>
+      <rect x="396" y="0" width="8" height="8" rx="1" fill="#252236"/>
+      <rect x="408" y="0" width="8" height="8" rx="1" fill="#BEAED5"/>
+      <rect x="420" y="0" width="8" height="8" rx="1" fill="#514B68"/>
+
+      <rect x="0" y="13" width="8" height="8" rx="1" fill="#514B68"/>
+      <rect x="12" y="13" width="8" height="8" rx="1" fill="#252236"/>
+      <rect x="24" y="13" width="8" height="8" rx="1" fill="#BEAED5"/>
+      <rect x="36" y="13" width="8" height="8" rx="1" fill="#AAA5B9"/>
+      <rect x="48" y="13" width="8" height="8" rx="1" fill="#252236"/>
+      <rect x="60" y="13" width="8" height="8" rx="1" fill="#514B68"/>
+      <rect x="72" y="13" width="8" height="8" rx="1" fill="#BEAED5"/>
+      <rect x="84" y="13" width="8" height="8" rx="1" fill="#252236"/>
+      <rect x="96" y="13" width="8" height="8" rx="1" fill="#AAA5B9"/>
+      <rect x="108" y="13" width="8" height="8" rx="1" fill="#514B68"/>
+      <rect x="120" y="13" width="8" height="8" rx="1" fill="#252236"/>
+      <rect x="132" y="13" width="8" height="8" rx="1" fill="#BEAED5"/>
+      <rect x="144" y="13" width="8" height="8" rx="1" fill="#514B68"/>
+      <rect x="156" y="13" width="8" height="8" rx="1" fill="#252236"/>
+      <rect x="168" y="13" width="8" height="8" rx="1" fill="#AAA5B9"/>
+      <rect x="180" y="13" width="8" height="8" rx="1" fill="#BEAED5"/>
+      <rect x="192" y="13" width="8" height="8" rx="1" fill="#514B68"/>
+      <rect x="204" y="13" width="8" height="8" rx="1" fill="#252236"/>
+      <rect x="216" y="13" width="8" height="8" rx="1" fill="#BEAED5"/>
+      <rect x="228" y="13" width="8" height="8" rx="1" fill="#AAA5B9"/>
+      <rect x="240" y="13" width="8" height="8" rx="1" fill="#252236"/>
+      <rect x="252" y="13" width="8" height="8" rx="1" fill="#514B68"/>
+      <rect x="264" y="13" width="8" height="8" rx="1" fill="#BEAED5"/>
+      <rect x="276" y="13" width="8" height="8" rx="1" fill="#252236"/>
+      <rect x="288" y="13" width="8" height="8" rx="1" fill="#AAA5B9"/>
+      <rect x="300" y="13" width="8" height="8" rx="1" fill="#514B68"/>
+      <rect x="312" y="13" width="8" height="8" rx="1" fill="#BEAED5"/>
+      <rect x="324" y="13" width="8" height="8" rx="1" fill="#252236"/>
+      <rect x="336" y="13" width="8" height="8" rx="1" fill="#AAA5B9"/>
+      <rect x="348" y="13" width="8" height="8" rx="1" fill="#514B68"/>
+      <rect x="360" y="13" width="8" height="8" rx="1" fill="#252236"/>
+      <rect x="372" y="13" width="8" height="8" rx="1" fill="#BEAED5"/>
+      <rect x="384" y="13" width="8" height="8" rx="1" fill="#AAA5B9"/>
+      <rect x="396" y="13" width="8" height="8" rx="1" fill="#514B68"/>
+      <rect x="408" y="13" width="8" height="8" rx="1" fill="#252236"/>
+      <rect x="420" y="13" width="8" height="8" rx="1" fill="#BEAED5"/>
+    </g>
+
+    <g font-family="monospace" font-size="8" fill="#AAA5B9">
+      <text x="690" y="313">LOW</text>
+      <rect x="713" y="307" width="8" height="8" rx="1" fill="#252236"/>
+      <rect x="725" y="307" width="8" height="8" rx="1" fill="#514B68"/>
+      <rect x="737" y="307" width="8" height="8" rx="1" fill="#AAA5B9"/>
+      <rect x="749" y="307" width="8" height="8" rx="1" fill="#BEAED5"/>
+      <rect x="761" y="307" width="8" height="8" rx="1" fill="#E8D5EF"/>
+      <text x="779" y="313">HIGH</text>
+      <text x="690" y="331" opacity=".7">SIMULATED</text>
+    </g>
+  </g>
+
+  <!-- Frame and corner marks -->
+  <rect x=".5" y=".5" width="819" height="359" rx="12" stroke="#AAA5B9" stroke-opacity=".48"/>
+  <path d="M1 20V1H20 M800 1H819V20 M1 340V359H20 M800 359H819V340"
+    stroke="#BEAED5" stroke-width="1.2"/>
+</svg>
