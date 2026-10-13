@@ -82,18 +82,14 @@ Project ACE is a real-time global data terminal built to explore the events shap
 ---
 
 
-
-
 ## `02` / TECHNICAL ARSENAL
 
 <div align="center">
-
-<img
-  src="./assets/technical-arsenal.svg"
-  width="100%"
-  alt="Technical Arsenal — programming languages, backend and data, frontend and visualization, tools and environment"
-/>
-
+  <img
+    src="./assets/technical-arsenal.svg"
+    width="100%"
+    alt="Technical Arsenal"
+  />
 </div>
 
 ---
