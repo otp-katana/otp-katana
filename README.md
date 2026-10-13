@@ -82,7 +82,7 @@ Project ACE is a real-time global data terminal built to explore the events shap
 ---
 
 
-〒 TECHNICAL ARSENAL
+## 〒 TECHNICAL ARSENAL
 
 <div align="center">
   <img
