@@ -10,7 +10,7 @@
 
 ---
 
-## ◈ PROJECT ACE
+## ◈│ PROJECT ACE
 
 **A window into our ever-changing world.**
 
@@ -82,7 +82,7 @@ Project ACE is a real-time global data terminal built to explore the events shap
 ---
 
 
-## 〒 TECHNICAL ARSENAL
+## 〒│ TECHNICAL ARSENAL
 
 <div align="center">
   <img
@@ -95,7 +95,11 @@ Project ACE is a real-time global data terminal built to explore the events shap
 ---
 
 
-## `03` / ACTIVITY ARCADE
+## ✈│ ACTIVITY ARCADE
+
+<p align="center">
+  <img src="assets/space-run.svg" width="100%" alt="Space Run — Activity Arcade">
+</p>
 
 <div align="center">
 
