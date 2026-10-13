@@ -55,11 +55,19 @@ Project ACE is a real-time global data terminal built to explore the events shap
         <a href="https://github.com/otp-katana/PROJECT-ACE---All-Covering-Eye-Real-Time-Global-Data-Terminal">
           Explore the project ↗
         </a>
-      </p>
-    </td>
-    <td width="40%" valign="middle" align="center">
-      <img src="./assets/ace-terminal.svg" width="100%" alt="Project ACE interactive global data terminal"/>
-    </td>
+      </p><td width="40%" valign="top" align="center">
+  <img
+    src="./assets/ace-terminal.svg"
+    width="100%"
+    alt="Project ACE global monitoring terminal"
+  />
+  <br/>
+  <img
+    src="./assets/ace-explorer.svg"
+    width="100%"
+    alt="Project ACE animated spatial explorer"
+  />
+</td>
   </tr>
 </table>
 
