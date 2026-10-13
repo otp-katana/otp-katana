@@ -1,1 +1,325 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="520" height="500" viewBox="0 0 520 500">
 
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08080F"/>
+      <stop offset=".55" stop-color="#100F1D"/>
+      <stop offset="1" stop-color="#08080F"/>
+    </linearGradient>
+
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1A1728" stop-opacity=".94"/>
+      <stop offset="1" stop-color="#0D0C1A" stop-opacity=".72"/>
+    </linearGradient>
+
+    <radialGradient id="planet">
+      <stop offset="0" stop-color="#AAA5B9" stop-opacity=".10"/>
+      <stop offset=".8" stop-color="#BEAED5" stop-opacity=".04"/>
+      <stop offset="1" stop-color="#08080F" stop-opacity=".92"/>
+    </radialGradient>
+
+    <linearGradient id="orbit" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8A7FA0" stop-opacity=".12"/>
+      <stop offset=".5" stop-color="#D4B8F0" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#8A7FA0" stop-opacity=".12"/>
+    </linearGradient>
+
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="sphereClip">
+      <circle cx="284" cy="248" r="112"/>
+    </clipPath>
+
+    <pattern id="microGrid" width="20" height="20"
+             patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none"
+            stroke="#AAA5B9" stroke-opacity=".045"
+            stroke-width=".6"/>
+    </pattern>
+  </defs>
+
+  <!-- Application shell -->
+  <rect width="520" height="500" rx="8" fill="url(#background)"/>
+  <rect width="520" height="500" rx="8" fill="url(#microGrid)"/>
+  <rect x="8" y="8" width="504" height="484" rx="5"
+        fill="none" stroke="#AAA5B9" stroke-opacity=".25"/>
+
+  <!-- Top navigation -->
+  <rect x="9" y="9" width="502" height="38" rx="4"
+        fill="#0D0C1A" fill-opacity=".94"/>
+
+  <g font-family="monospace">
+    <text x="22" y="25" font-size="10"
+          font-weight="bold" letter-spacing="1.5"
+          fill="#FFFFFF">PROJECT ACE</text>
+    <text x="22" y="37" font-size="6.5"
+          letter-spacing="1.2" fill="#AAA5B9">ALL-COVERING EYE</text>
+
+    <path d="M124 16V40" stroke="#AAA5B9" stroke-opacity=".2"/>
+
+    <circle cx="143" cy="27" r="3" fill="#BEAED5">
+      <animate attributeName="opacity"
+               values=".35;1;.35" dur="2.4s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <text x="152" y="30" font-size="8"
+          letter-spacing=".8" fill="#E8D5EF">SYSTEM ACTIVE</text>
+
+    <text x="497" y="29" font-size="7"
+          letter-spacing=".7" fill="#AAA5B9"
+          text-anchor="end">GLOBAL / 3D</text>
+  </g>
+
+  <path d="M9 47H511" stroke="#AAA5B9" stroke-opacity=".22"/>
+
+  <!-- Left module rail -->
+  <rect x="15" y="57" width="96" height="363" rx="3"
+        fill="url(#panel)" stroke="#AAA5B9" stroke-opacity=".2"/>
+
+  <g font-family="monospace">
+    <text x="24" y="75" font-size="7"
+          letter-spacing="1.1" fill="#AAA5B9">PROTOCOLS</text>
+
+    <path d="M23 84H103" stroke="#AAA5B9" stroke-opacity=".2"/>
+
+    <!-- Active module -->
+    <rect x="20" y="92" width="86" height="36" rx="2"
+          fill="#BEAED5" fill-opacity=".12"
+          stroke="#BEAED5" stroke-opacity=".6"/>
+
+    <rect x="20" y="92" width="2" height="36" fill="#BEAED5"/>
+
+    <text x="28" y="106" font-size="9"
+          font-weight="bold" fill="#FFFFFF">OMORI</text>
+    <text x="28" y="119" font-size="6.5"
+          letter-spacing=".5" fill="#E8D5EF">ACTIVE</text>
+
+    <g fill="#AAA5B9" font-size="8">
+      <text x="27" y="151">LOVELOCK</text>
+      <text x="27" y="177">CURIE</text>
+      <text x="27" y="203">DOPPLER</text>
+      <text x="27" y="229">LORENZ</text>
+      <text x="27" y="255">CLARKE</text>
+      <text x="27" y="281">ARF</text>
+    </g>
+
+    <g fill="none" stroke="#AAA5B9" stroke-opacity=".35">
+      <circle cx="96" cy="148" r="2"/>
+      <circle cx="96" cy="174" r="2"/>
+      <circle cx="96" cy="200" r="2"/>
+      <circle cx="96" cy="226" r="2"/>
+      <circle cx="96" cy="252" r="2"/>
+      <circle cx="96" cy="278" r="2"/>
+    </g>
+
+    <path d="M23 300H103" stroke="#AAA5B9" stroke-opacity=".2"/>
+
+    <text x="24" y="317" font-size="7"
+          letter-spacing=".7" fill="#AAA5B9">LAYERS</text>
+
+    <circle cx="29" cy="334" r="2.5" fill="#E8D5EF"/>
+    <text x="37" y="337" font-size="7" fill="#E8D5EF">SEISMIC</text>
+
+    <circle cx="29" cy="351" r="2.5" fill="#BEAED5"/>
+    <text x="37" y="354" font-size="7" fill="#E8D5EF">VOLCANIC</text>
+
+    <circle cx="29" cy="368" r="2.5" fill="#E8A853"/>
+    <text x="37" y="371" font-size="7" fill="#E8D5EF">FAULTS</text>
+
+    <text x="24" y="402" font-size="6.5"
+          letter-spacing=".5" fill="#AAA5B9">MODULE 01 / 07</text>
+  </g>
+
+  <!-- Globe viewport -->
+  <rect x="119" y="57" width="386" height="363" rx="3"
+        fill="#08080F" fill-opacity=".34"
+        stroke="#AAA5B9" stroke-opacity=".13"/>
+
+  <g font-family="monospace" font-size="7"
+     letter-spacing=".8" fill="#AAA5B9">
+    <text x="130" y="73">PLANETARY VIEW</text>
+    <text x="494" y="73" text-anchor="end">AUTO-ROTATION</text>
+  </g>
+
+  <!-- Orbital rings: independently animated -->
+  <g fill="none" stroke="url(#orbit)" stroke-width="1">
+    <ellipse cx="309" cy="247" rx="153" ry="44"
+             transform="rotate(-29 309 247)"
+             stroke-opacity=".8">
+      <animateTransform attributeName="transform"
+                        type="rotate"
+                        from="-29 309 247"
+                        to="331 309 247"
+                        dur="28s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <ellipse cx="284" cy="248" rx="151" ry="43"
+             transform="rotate(54 284 248)"
+             stroke-opacity=".55">
+      <animateTransform attributeName="transform"
+                        type="rotate"
+                        from="54 284 248"
+                        to="-306 284 248"
+                        dur="34s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <ellipse cx="284" cy="248" rx="137" ry="137"
+             stroke="#8A7FA0" stroke-opacity=".3"
+             stroke-dasharray="2 7">
+      <animateTransform attributeName="transform"
+                        type="rotate"
+                        from="0 284 248"
+                        to="360 284 248"
+                        dur="65s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- Moving orbital markers -->
+  <g>
+    <circle cx="0" cy="0" r="3" fill="#FFFFFF"
+            filter="url(#softGlow)">
+      <animateMotion dur="28s" repeatCount="indefinite"
+                     path="M156 183 A153 44 -29 1 1 462 311 A153 44 -29 1 1 156 183"/>
+    </circle>
+
+    <circle cx="0" cy="0" r="2.5" fill="#BEAED5"
+            filter="url(#softGlow)">
+      <animateMotion dur="34s" repeatCount="indefinite"
+                     path="M185 149 A151 43 54 1 1 383 347 A151 43 54 1 1 185 149"/>
+    </circle>
+  </g>
+
+  <!-- Globe base and rotating surface -->
+  <circle cx="284" cy="248" r="112"
+          fill="url(#planet)"
+          stroke="#AAA5B9" stroke-opacity=".65"
+          stroke-width="1"/>
+
+  <g clip-path="url(#sphereClip)">
+
+    <!-- Globe surface rotation approximation -->
+    <g>
+      <animateTransform attributeName="transform"
+                        type="rotate"
+                        from="0 284 248"
+                        to="360 284 248"
+                        dur="42s"
+                        repeatCount="indefinite"/>
+
+      <!-- Wireframe latitudes -->
+      <g fill="none" stroke="#AAA5B9" stroke-opacity=".46"
+         stroke-width=".7">
+        <ellipse cx="284" cy="248" rx="110" ry="27"/>
+        <ellipse cx="284" cy="248" rx="110" ry="57"/>
+        <ellipse cx="284" cy="248" rx="110" ry="84"/>
+        <path d="M172 248H396"/>
+        <path d="M180 213Q284 244 388 213"/>
+        <path d="M180 283Q284 252 388 283"/>
+      </g>
+
+      <!-- Longitude mesh -->
+      <g fill="none" stroke="#AAA5B9" stroke-opacity=".58"
+         stroke-width=".8">
+        <ellipse cx="284" cy="248" rx="30" ry="111"/>
+        <ellipse cx="284" cy="248" rx="65" ry="111"/>
+        <ellipse cx="284" cy="248" rx="92" ry="111"/>
+      </g>
+
+      <!-- Simplified continental outlines -->
+      <g fill="#BEAED5" fill-opacity=".08"
+         stroke="#E8D5EF" stroke-opacity=".8"
+         stroke-width=".9" stroke-linejoin="round">
+
+        <!-- North America -->
+        <path d="M196 181L211 166L231 170L244 185
+                 L237 198L223 204L220 221L206 217
+                 L199 202L188 196Z"/>
+
+        <!-- South America -->
+        <path d="M227 224L243 227L250 243L244 260
+                 L239 280L229 300L222 285L222 264
+                 L215 245Z"/>
+
+        <!-- Europe and Asia -->
+        <path d="M250 179L268 167L286 173L298 168
+                 L321 176L337 188L358 191L371 208
+                 L359 218L340 215L330 229L314 222
+                 L301 211L286 214L274 203L260 203Z"/>
+
+        <!-- Africa -->
+        <path d="M271 218L291 216L306 230L302 251
+                 L290 273L278 280L268 258L261 238Z"/>
+
+        <!-- Australia -->
+        <path d="M332 266L351 261L364 271L358 285
+                 L343 290L330 281Z"/>
+      </g>
+    </g>
+
+    <!-- Soft scan band -->
+    <rect x="170" y="136" width="228" height="8"
+          fill="#BEAED5" fill-opacity=".1">
+      <animate attributeName="y"
+               values="136;352;136"
+               dur="7s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Globe rim -->
+  <circle cx="284" cy="248" r="112"
+          fill="none" stroke="#BEAED5"
+          stroke-opacity=".55" stroke-width="1"/>
+
+  <!-- Decorative event markers -->
+  <g fill="#E8D5EF" filter="url(#softGlow)">
+    <circle cx="226" cy="208" r="2.5">
+      <animate attributeName="opacity"
+               values=".4;1;.4" dur="1.8s"
+               repeatCount="indefinite"/>
+    </circle>
+    <circle cx="303" cy="264" r="2">
+      <animate attributeName="opacity"
+               values="1;.35;1" dur="2.3s"
+               repeatCount="indefinite"/>
+    </circle>
+    <circle cx="333" cy="202" r="2.5">
+      <animate attributeName="opacity"
+               values=".3;1;.3" dur="2.7s"
+               repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Lower telemetry strip -->
+  <path d="M15 432H505" stroke="#AAA5B9" stroke-opacity=".25"/>
+
+  <g font-family="monospace">
+    <text x="22" y="450" font-size="7"
+          letter-spacing="1" fill="#AAA5B9">CURRENT PROTOCOL</text>
+    <text x="22" y="468" font-size="13"
+          font-weight="bold" fill="#FFFFFF">OMORI</text>
+    <text x="22" y="481" font-size="7"
+          letter-spacing=".7" fill="#BEAED5">SEISMIC / VOLCANIC</text>
+
+    <path d="M171 442V484" stroke="#AAA5B9" stroke-opacity=".25"/>
+
+    <text x="185" y="450" font-size="7"
+          letter-spacing="1" fill="#AAA5B9">DATA SOURCES</text>
+    <text x="185" y="466" font-size="8" fill="#E8D5EF">USGS / GVP</text>
+    <text x="185" y="481" font-size="7" fill="#AAA5B9">EXTERNAL FEEDS</text>
+
+    <path d="M340 442V484" stroke="#AAA5B9" stroke-opacity=".25"/>
+
+    <text x="354" y="450" font-size="7"
+          letter-spacing=".8" fill="#AAA5B9">INTERFACE</text>
+    <text x="354" y="466" font-size="8" fill="#E8D5EF">3D GLOBE</text>
+    <text x="354" y="481" font-size="7" fill="#AAA5B9">JSON HTTP API</text>
+  </g>
+</svg>
