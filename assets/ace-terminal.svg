@@ -4,13 +4,13 @@
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#08080F"/>
-      <stop offset=".55" stop-color="#100F1D"/>
+      <stop offset=".55" stop-color="#0D0C1A"/>
       <stop offset="1" stop-color="#08080F"/>
     </linearGradient>
 
     <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#1A1728" stop-opacity=".94"/>
-      <stop offset="1" stop-color="#0D0C1A" stop-opacity=".72"/>
+      <stop offset="0" stop-color="#0D0C1A" stop-opacity=".94"/>
+      <stop offset="1" stop-color="#08080F" stop-opacity=".72"/>
     </linearGradient>
 
     <radialGradient id="planet">
@@ -20,9 +20,9 @@
     </radialGradient>
 
     <linearGradient id="orbit" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#8A7FA0" stop-opacity=".12"/>
-      <stop offset=".5" stop-color="#D4B8F0" stop-opacity=".95"/>
-      <stop offset="1" stop-color="#8A7FA0" stop-opacity=".12"/>
+      <stop offset="0" stop-color="#AAA5B9" stop-opacity=".12"/>
+      <stop offset=".5" stop-color="#BEAED5" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#AAA5B9" stop-opacity=".12"/>
     </linearGradient>
 
     <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
@@ -92,8 +92,8 @@
 
     <!-- Active module -->
     <rect x="20" y="92" width="86" height="36" rx="2"
-          fill="#BEAED5" fill-opacity=".12"
-          stroke="#BEAED5" stroke-opacity=".6"/>
+          fill="#AAA5B9" fill-opacity=".12"
+          stroke="#AAA5B9" stroke-opacity=".6"/>
 
     <rect x="20" y="92" width="2" height="36" fill="#BEAED5"/>
 
@@ -149,7 +149,7 @@
     <text x="494" y="73" text-anchor="end">AUTO-ROTATION</text>
   </g>
 
-  <!-- Orbital rings: independently animated -->
+  <!-- Orbital rings: animations unchanged -->
   <g fill="none" stroke="url(#orbit)" stroke-width="1">
     <ellipse cx="309" cy="247" rx="153" ry="44"
              transform="rotate(-29 309 247)"
@@ -172,7 +172,7 @@
     </ellipse>
 
     <ellipse cx="284" cy="248" rx="137" ry="137"
-             stroke="#8A7FA0" stroke-opacity=".3"
+             stroke="#AAA5B9" stroke-opacity=".3"
              stroke-dasharray="2 7">
       <animateTransform attributeName="transform"
                         type="rotate"
@@ -204,8 +204,6 @@
           stroke-width="1"/>
 
   <g clip-path="url(#sphereClip)">
-
-    <!-- Globe surface rotation approximation -->
     <g>
       <animateTransform attributeName="transform"
                         type="rotate"
@@ -234,31 +232,26 @@
       </g>
 
       <!-- Simplified continental outlines -->
-      <g fill="#BEAED5" fill-opacity=".08"
+      <g fill="#AAA5B9" fill-opacity=".08"
          stroke="#E8D5EF" stroke-opacity=".8"
          stroke-width=".9" stroke-linejoin="round">
 
-        <!-- North America -->
         <path d="M196 181L211 166L231 170L244 185
                  L237 198L223 204L220 221L206 217
                  L199 202L188 196Z"/>
 
-        <!-- South America -->
         <path d="M227 224L243 227L250 243L244 260
                  L239 280L229 300L222 285L222 264
                  L215 245Z"/>
 
-        <!-- Europe and Asia -->
         <path d="M250 179L268 167L286 173L298 168
                  L321 176L337 188L358 191L371 208
                  L359 218L340 215L330 229L314 222
                  L301 211L286 214L274 203L260 203Z"/>
 
-        <!-- Africa -->
         <path d="M271 218L291 216L306 230L302 251
                  L290 273L278 280L268 258L261 238Z"/>
 
-        <!-- Australia -->
         <path d="M332 266L351 261L364 271L358 285
                  L343 290L330 281Z"/>
       </g>
