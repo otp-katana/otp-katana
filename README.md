@@ -143,3 +143,7 @@ Project ACE is a real-time global data terminal built to explore the events shap
 <div align="center">
   <img src="assets/establish-connection.svg" width="100%" alt="ACE Establish Connection interface" />
 </div>
+
+<div align="center">
+  <img src="assets/pacman.svg" width="100%" alt="ACE Arcade Ticker" />
+</div>
