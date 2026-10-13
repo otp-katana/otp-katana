@@ -150,27 +150,49 @@
       </circle>
     </g>
 
-    <!-- Pac-Man: original movement and mouth animation preserved -->
+        
+    <!-- Pac-Man -->
     <g>
       <path fill="#E8D5EF" d="M0 0 L13 -9 A16 16 0 1 0 13 9 Z">
         <animate attributeName="d"
           values="M0 0 L13 -9 A16 16 0 1 0 13 9 Z;M0 0 L16 0 A16 16 0 1 0 16 0 Z;M0 0 L13 -9 A16 16 0 1 0 13 9 Z"
           dur=".38s" repeatCount="indefinite"/>
-        <animateMotion path="M-22 70 H842" dur="12s" repeatCount="indefinite" rotate="auto"/>
+        <animate attributeName="opacity"
+          values="1;1;0;0"
+          keyTimes="0;0.978;0.980;1"
+          dur="12s" repeatCount="indefinite"/>
+        <animateMotion
+          path="M-22 70 H842"
+          dur="12s" repeatCount="indefinite" rotate="auto"/>
       </path>
     </g>
-
-    <!-- Ghosts unchanged -->
+    
+    <!-- Ghost 1 -->
     <g>
       <use href="#ace-ghost">
-        <animateMotion path="M-80 70 H880" dur="12s" begin="-1.2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity"
+          values="1;1;0;0"
+          keyTimes="0;0.926;0.928;1"
+          dur="12s" repeatCount="indefinite"/>
+        <animateMotion
+          path="M32 70 H900"
+          dur="12s" repeatCount="indefinite"/>
       </use>
     </g>
+    
+    <!-- Ghost 2 -->
     <g>
-      <use href="#ace-ghost" opacity=".8">
-        <animateMotion path="M-80 70 H880" dur="12s" begin="-2.1s" repeatCount="indefinite"/>
+      <use href="#ace-ghost">
+        <animate attributeName="opacity"
+          values=".8;.8;0;0"
+          keyTimes="0;0.843;0.845;1"
+          dur="12s" repeatCount="indefinite"/>
+        <animateMotion
+          path="M88 70 H972"
+          dur="12s" repeatCount="indefinite"/>
       </use>
     </g>
+
 
     <!-- Motion streaks unchanged -->
     <g stroke="#BEAED5" stroke-width="1" stroke-linecap="round" opacity=".55">
