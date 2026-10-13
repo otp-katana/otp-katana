@@ -346,6 +346,7 @@
 
       <!-- FAST CENTRAL IMPACT FLASH -->
       <rect x="395" y="153" width="410" height="14"
+      transform="translate(600 0) scale(.35 1) translate(-600 0)"
             fill="url(#impactGlow)" opacity="0"
             filter="url(#hardGlow)">
         <animate attributeName="opacity"
