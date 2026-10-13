@@ -83,6 +83,7 @@ Project ACE is a real-time global data terminal built to explore the events shap
 
 
 
+
 ## `02` / TECHNICAL ARSENAL
 
 <div align="center">
@@ -96,7 +97,6 @@ Project ACE is a real-time global data terminal built to explore the events shap
 </div>
 
 ---
-
 
 
 ## `03` / ACTIVITY ARCADE
