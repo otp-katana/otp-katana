@@ -1,5 +1,9 @@
 
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320">
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200" height="320"
+     viewBox="0 0 1200 320"
+     preserveAspectRatio="xMidYMid meet">
+
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#09090F"/>
@@ -8,9 +12,9 @@
     </linearGradient>
 
     <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#6D28D9" stop-opacity=".25"/>
+      <stop offset="0%" stop-color="#6D28D9" stop-opacity=".2"/>
       <stop offset="50%" stop-color="#A371F7"/>
-      <stop offset="100%" stop-color="#6D28D9" stop-opacity=".25"/>
+      <stop offset="100%" stop-color="#6D28D9" stop-opacity=".2"/>
     </linearGradient>
 
     <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
@@ -19,9 +23,13 @@
       <stop offset="100%" stop-color="#A371F7" stop-opacity="0"/>
     </linearGradient>
 
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M40 0H0V40" fill="none"
-            stroke="#A371F7" stroke-opacity=".055" stroke-width="1"/>
+    <pattern id="grid" width="40" height="40"
+             patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40"
+            fill="none"
+            stroke="#A371F7"
+            stroke-opacity=".055"
+            stroke-width="1"/>
     </pattern>
 
     <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
@@ -33,100 +41,130 @@
     </filter>
 
     <clipPath id="panel">
-      <rect width="1200" height="280" rx="8"/>
+      <rect width="1200" height="320" rx="8"/>
     </clipPath>
   </defs>
 
-  <!-- Background -->
   <g clip-path="url(#panel)">
-    <rect width="1200" height="280" fill="url(#bg)"/>
-    <rect width="1200" height="280" fill="url(#grid)"/>
 
-    <!-- Ambient light -->
-    <ellipse cx="600" cy="115" rx="390" ry="115"
-             fill="#6D28D9" opacity=".09"/>
+    <!-- Background -->
+    <rect width="1200" height="320" fill="url(#bg)"/>
+    <rect width="1200" height="320" fill="url(#grid)"/>
+
+    <!-- Ambient violet light -->
+    <ellipse cx="600" cy="145" rx="410" ry="135"
+             fill="#6D28D9" opacity=".10"/>
 
     <!-- Technical side details -->
-    <g fill="none" stroke="#A371F7" stroke-opacity=".22">
-      <path d="M0 72H150L174 96H245"/>
-      <path d="M1200 72H1050L1026 96H955"/>
-      <path d="M0 218H120L142 196H230"/>
-      <path d="M1200 218H1080L1058 196H970"/>
+    <g fill="none" stroke="#A371F7" stroke-opacity=".24">
+      <path d="M0 82H150L174 106H245"/>
+      <path d="M1200 82H1050L1026 106H955"/>
+      <path d="M0 248H120L142 226H230"/>
+      <path d="M1200 248H1080L1058 226H970"/>
     </g>
 
-    <g fill="#A371F7" opacity=".7">
-      <circle cx="150" cy="72" r="2"/>
-      <circle cx="1050" cy="72" r="2"/>
-      <circle cx="120" cy="218" r="2"/>
-      <circle cx="1080" cy="218" r="2"/>
+    <g fill="#A371F7" opacity=".75">
+      <circle cx="150" cy="82" r="2"/>
+      <circle cx="1050" cy="82" r="2"/>
+      <circle cx="120" cy="248" r="2"/>
+      <circle cx="1080" cy="248" r="2"/>
     </g>
 
     <!-- Terminal frame -->
-    <rect x="18" y="18" width="1164" height="244" rx="5"
-          fill="none" stroke="#6D28D9" stroke-opacity=".48"/>
+    <rect x="18" y="18" width="1164" height="284" rx="5"
+          fill="none"
+          stroke="#6D28D9"
+          stroke-opacity=".48"/>
 
     <!-- Angular corner brackets -->
-    <g fill="none" stroke="#A371F7" stroke-width="2"
-       stroke-linecap="square" filter="url(#glow)">
-      <path d="M42 68V42H92"/>
-      <path d="M1108 42H1158V68"/>
-      <path d="M42 212V238H92"/>
-      <path d="M1108 238H1158V212"/>
+    <g fill="none"
+       stroke="#A371F7"
+       stroke-width="2"
+       stroke-linecap="square"
+       filter="url(#glow)">
+      <path d="M42 70V42H92"/>
+      <path d="M1108 42H1158V70"/>
+      <path d="M42 250V278H92"/>
+      <path d="M1108 278H1158V250"/>
     </g>
 
     <!-- Top status bar -->
     <g font-family="monospace" font-size="11" letter-spacing="2">
       <text x="62" y="61" fill="#C9A7FF">IDENTITY.SYS</text>
-      <text x="1138" y="61" fill="#9B91AC" text-anchor="end">K-001 // PROFILE</text>
+      <text x="1138" y="61"
+            fill="#9B91AC"
+            text-anchor="end">K-001 // PROFILE</text>
     </g>
 
-    <path d="M62 78H1138" stroke="url(#neon)" stroke-width="1"/>
+    <path d="M62 80H1138"
+          stroke="url(#neon)"
+          stroke-width="1"/>
 
     <!-- Main identity -->
-    <text x="600" y="145"
+    <text x="600" y="158"
           font-family="Orbitron, Rajdhani, Arial, sans-serif"
-          font-size="76" font-weight="900" letter-spacing="3"
-          fill="#FFFFFF" text-anchor="middle">katana.</text>
+          font-size="82"
+          font-weight="900"
+          letter-spacing="3"
+          fill="#FFFFFF"
+          text-anchor="middle">katana.</text>
 
-    <!-- Underline -->
-    <path d="M480 161H720" stroke="#A371F7"
-          stroke-width="2" filter="url(#glow)"/>
+    <!-- Neon underline -->
+    <path d="M465 178H735"
+          stroke="#A371F7"
+          stroke-width="2"
+          filter="url(#glow)"/>
 
     <!-- Role -->
-    <text x="600" y="191"
+    <text x="600" y="214"
           font-family="Orbitron, Rajdhani, Arial, sans-serif"
-          font-size="20" font-weight="700" letter-spacing="4"
-          fill="#C9A7FF" text-anchor="middle">DATA ENGINEER</text>
+          font-size="22"
+          font-weight="700"
+          letter-spacing="4"
+          fill="#C9A7FF"
+          text-anchor="middle">DATA ENGINEER</text>
 
-    <text x="600" y="215"
-          font-family="monospace" font-size="11"
-          letter-spacing="3" fill="#9B91AC"
+    <!-- Specialization -->
+    <text x="600" y="241"
+          font-family="monospace"
+          font-size="12"
+          letter-spacing="3"
+          fill="#9B91AC"
           text-anchor="middle">DATA / SYSTEMS / ARCHITECTURE</text>
 
     <!-- Bottom status bar -->
-    <path d="M62 229H1138" stroke="#6D28D9" stroke-opacity=".5"/>
+    <path d="M62 259H1138"
+          stroke="#6D28D9"
+          stroke-opacity=".5"/>
 
-    <circle cx="72" cy="245" r="3" fill="#A371F7">
+    <circle cx="72" cy="280" r="3" fill="#A371F7">
       <animate attributeName="opacity"
-               values=".4;1;.4" dur="2.4s"
+               values=".4;1;.4"
+               dur="2.4s"
                repeatCount="indefinite"/>
     </circle>
 
-    <text x="84" y="249" font-family="monospace"
-          font-size="10" letter-spacing="1.5"
+    <text x="84" y="284"
+          font-family="monospace"
+          font-size="10"
+          letter-spacing="1.5"
           fill="#C9A7FF">SYSTEM ONLINE</text>
 
-    <text x="1138" y="249" font-family="monospace"
-          font-size="10" letter-spacing="1.5"
-          fill="#9B91AC" text-anchor="end">BUILDING THE UNKNOWN</text>
+    <text x="1138" y="284"
+          font-family="monospace"
+          font-size="10"
+          letter-spacing="1.5"
+          fill="#9B91AC"
+          text-anchor="end">BUILDING THE UNKNOWN</text>
 
     <!-- Subtle animated scan -->
-    <rect x="20" y="18" width="1160" height="24"
+    <rect x="20" y="18" width="1160" height="26"
           fill="url(#scan)" opacity=".65">
       <animate attributeName="y"
-               values="18;238;18"
+               values="18;276;18"
                dur="9s"
                repeatCount="indefinite"/>
     </rect>
+
   </g>
 </svg>
