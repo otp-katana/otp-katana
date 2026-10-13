@@ -67,6 +67,14 @@ Project ACE is a real-time global data terminal built to explore the events shap
     width="100%"
     alt="Project ACE animated spatial explorer"
   />
+       
+<br/>
+<img
+  src="./assets/ace-ticker.svg"
+  width="100%"
+  alt="Oktay Sinanoğlu'nun Türkçe, kültür ve kimlik üzerine sözlerinden oluşan kayan yazı bandı"
+/>
+
 </td>
   </tr>
 </table>
