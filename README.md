@@ -10,7 +10,7 @@
 
 ---
 
-## ◈ Project ACE
+## ◈ PROJECT ACE
 
 **A window into our ever-changing world.**
 
@@ -82,7 +82,7 @@ Project ACE is a real-time global data terminal built to explore the events shap
 ---
 
 
-## `02` / TECHNICAL ARSENAL
+〒 TECHNICAL ARSENAL
 
 <div align="center">
   <img
