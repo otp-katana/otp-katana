@@ -10,95 +10,55 @@
 
 ---
 
-## `01` / FEATURED PROJECT
+## ◈ Project ACE
 
+**A window into our ever-changing world.**
 
-<!-- PROJECT ACE -->
-<h2>◈ PROJECT ACE — All-Covering Eye</h2>
+Project ACE is a real-time global data terminal built to explore the events shaping our planet. It brings geographic data into an interactive 3D environment, turning raw signals into a visual experience that is easier to explore and understand.
 
 <table>
   <tr>
     <td width="60%" valign="top">
-
-      <h3>A Real-Time Global Data Terminal</h3>
-
+      <h3>What is ACE?</h3>
       <p>
-        <em>
-          Turning scattered signals into a living picture of our planet.
-        </em>
+        At its core, ACE combines data engineering, backend architecture,
+        and interactive visualization. Its globe serves as a living
+        canvas for global events — connecting incoming information
+        with the places where it happens.
       </p>
-
+      <h3>Made to explore</h3>
       <p>
-        Project ACE is an ongoing data engineering and visualization
-        project that brings global events into a unified, interactive
-        3D environment. Its central interface is a cyber-globe designed
-        to connect incoming data streams with spatial visualization
-        and modular monitoring systems.
+        ◇ <strong>Global activity</strong><br/>
+        Explore earthquake and volcanic activity through external data sources.
       </p>
-
-      <h4>CORE CAPABILITIES</h4>
-
-      <ul>
-        <li>
-          <strong>Global Event Monitoring</strong> — visualizing
-          earthquake and volcanic activity through external data sources.
-        </li>
-        <li>
-          <strong>Interactive 3D Globe</strong> — exploring geographic
-          events through a spatial interface.
-        </li>
-        <li>
-          <strong>Modular Architecture</strong> — organizing data
-          providers, backend protocols, and visualization layers
-          for future expansion.
-        </li>
-        <li>
-          <strong>Data-Driven Design</strong> — connecting structured
-          data with a clear, interactive visual experience.
-        </li>
-      </ul>
-
-      <h4>ENGINEERING STACK</h4>
-
       <p>
-        <strong>Backend:</strong>
-        Python · FastAPI · Pydantic
-        <br/>
-        <strong>Frontend:</strong>
-        React · Three.js · D3 Geo
-        <br/>
-        <strong>Communication:</strong>
-        JSON HTTP API
+        ◇ <strong>A world in 3D</strong><br/>
+        Discover geographic events through an interactive globe and spatial visualization.
       </p>
-
-      <h4>MODULE STATUS</h4>
-
       <p>
-        <strong>OMORI</strong> — current focus: seismic and volcanic
-        activity monitoring.
+        ◇ <strong>Built to grow</strong><br/>
+        A modular architecture designed to make new data domains easier to integrate.
       </p>
-
+      <h3>Under the surface</h3>
       <p>
-        Additional modules are part of the project's longer-term
-        expansion roadmap.
+        <strong>Backend</strong> · Python, FastAPI, Pydantic<br/>
+        <strong>Frontend</strong> · React, Three.js, D3 Geo<br/>
+        <strong>Communication</strong> · JSON HTTP API
       </p>
-
+      <h3>Where it stands</h3>
+      <p>
+        <strong>OMORI</strong> is the current focus, centered on seismic
+        and volcanic activity. Other domains remain part of ACE's
+        longer-term vision.
+      </p>
       <p>
         <a href="https://github.com/otp-katana/PROJECT-ACE---All-Covering-Eye-Real-Time-Global-Data-Terminal">
-          <strong>↗ EXPLORE PROJECT ACE</strong>
+          Explore the project ↗
         </a>
       </p>
-
     </td>
-
     <td width="40%" valign="middle" align="center">
-
-      <img
-        src="./assets/ace-terminal.svg"
-        width="100%"
-        alt="Project ACE — miniature global monitoring terminal"
-      />
-
+      <img src="./assets/ace-terminal.svg" width="100%" alt="Project ACE interactive global data terminal"/>
     </td>
   </tr>
 </table>
