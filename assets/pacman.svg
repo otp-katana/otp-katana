@@ -1,0 +1,185 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="100" viewBox="0 0 820 100">
+  <defs>
+    <pattern id="ace-ticker-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#AAA5B9" stroke-opacity=".06"/>
+    </pattern>
+    <clipPath id="ticker-clip">
+      <rect x="12" y="38" width="796" height="49" rx="2"/>
+    </clipPath>
+    <g id="ace-ghost">
+      <path d="M-9 8V-2A9 9 0 0 1 9 -2V8L4 5L0 8L-4 5Z" fill="#BEAED5"/>
+      <ellipse cx="-3" cy="-2" rx="2" ry="2.7" fill="#08080F"/>
+      <ellipse cx="3" cy="-2" rx="2" ry="2.7" fill="#08080F"/>
+    </g>
+  </defs>
+
+  <!-- Shell -->
+  <rect width="820" height="100" rx="6" fill="#08080F"/>
+  <rect width="820" height="100" rx="6" fill="url(#ace-ticker-grid)"/>
+  <rect x=".5" y=".5" width="819" height="99" rx="6" fill="none" stroke="#AAA5B9" stroke-opacity=".4"/>
+
+  <!-- Header -->
+  <path d="M1 28H819" stroke="#AAA5B9" stroke-opacity=".25"/>
+  <circle cx="16" cy="14" r="2.5" fill="#BEAED5"/>
+  <text x="27" y="18" fill="#AAA5B9" font-family="monospace" font-size="9" letter-spacing="1.5">ACE // ARCADE TICKER</text>
+  <text x="804" y="18" text-anchor="end" fill="#BEAED5" font-family="monospace" font-size="8">SIGNAL RUNNING</text>
+
+  <!-- Track -->
+  <g clip-path="url(#ticker-clip)">
+    <path d="M12 70H808" stroke="#AAA5B9" stroke-opacity=".35" stroke-width="1"/>
+
+    <!-- Points disappear as Pac-Man passes -->
+    <g fill="#E8D5EF" opacity=".9">
+      <circle cx="35" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.064972;0.065972;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="55" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.088120;0.089120;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="75" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.111269;0.112269;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="95" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.134417;0.135417;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="115" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.157565;0.158565;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="135" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.180713;0.181713;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="155" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.203861;0.204861;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="175" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.227009;0.228009;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="195" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.250157;0.251157;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="215" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.273306;0.274306;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="235" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.296454;0.297454;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="255" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.319602;0.320602;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="275" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.342750;0.343750;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="295" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.365898;0.366898;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="315" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.389046;0.390046;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="335" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.412194;0.413194;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="355" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.435343;0.436343;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="375" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.458491;0.459491;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="395" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.481639;0.482639;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="415" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.504787;0.505787;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="435" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.527935;0.528935;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="455" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.551083;0.552083;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="475" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.574231;0.575231;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="495" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.597380;0.598380;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="515" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.620528;0.621528;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="535" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.643676;0.644676;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="555" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.666824;0.667824;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="575" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.689972;0.690972;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="595" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.713120;0.714120;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="615" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.736269;0.737269;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="635" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.759417;0.760417;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="655" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.782565;0.783565;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="675" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.805713;0.806713;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="695" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.828861;0.829861;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="715" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.852009;0.853009;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="735" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.875157;0.876157;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="755" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.898306;0.899306;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="775" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.921454;0.922454;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="795" cy="70" r="2">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.944602;0.945602;1" dur="12s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Pac-Man: original movement and mouth animation preserved -->
+    <g>
+      <path fill="#E8D5EF" d="M0 0 L13 -9 A16 16 0 1 0 13 9 Z">
+        <animate attributeName="d"
+          values="M0 0 L13 -9 A16 16 0 1 0 13 9 Z;M0 0 L16 0 A16 16 0 1 0 16 0 Z;M0 0 L13 -9 A16 16 0 1 0 13 9 Z"
+          dur=".38s" repeatCount="indefinite"/>
+        <animateMotion path="M-22 70 H842" dur="12s" fill="freeze" rotate="auto"/>
+      </path>
+    </g>
+
+    <!-- Ghosts unchanged -->
+    <g>
+      <use href="#ace-ghost">
+        <animateMotion path="M-80 70 H880" dur="12s" begin="-1.2s" fill="freeze"/>
+      </use>
+    </g>
+    <g>
+      <use href="#ace-ghost" opacity=".8">
+        <animateMotion path="M-80 70 H880" dur="12s" begin="-2.1s" fill="freeze"/>
+      </use>
+    </g>
+
+    <!-- Motion streaks unchanged -->
+    <g stroke="#BEAED5" stroke-width="1" stroke-linecap="round" opacity=".55">
+      <path d="M0 49H14">
+        <animate attributeName="transform" values="translate(0 0);translate(800 0)" dur="7s" repeatCount="indefinite"/>
+      </path>
+      <path d="M-30 57H-12">
+        <animate attributeName="transform" values="translate(0 0);translate(800 0)" dur="8s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+</svg>
