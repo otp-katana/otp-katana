@@ -1,0 +1,79 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="280" viewBox="0 0 820 280">
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#AAA5B9" stroke-opacity=".07" stroke-width=".6"/>
+    </pattern>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#BEAED5" stop-opacity=".1"/>
+      <stop offset=".5" stop-color="#E8D5EF"/>
+      <stop offset="1" stop-color="#BEAED5" stop-opacity=".1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="820" height="280" rx="8" fill="#08080F"/>
+  <rect width="820" height="280" rx="8" fill="url(#grid)"/>
+  <rect x="1" y="1" width="818" height="278" rx="8" fill="none" stroke="#AAA5B9" stroke-opacity=".35"/>
+
+  <path d="M1 42H819" stroke="#AAA5B9" stroke-opacity=".3"/>
+  <circle cx="22" cy="21" r="3" fill="#BEAED5"/>
+  <circle cx="34" cy="21" r="3" fill="#AAA5B9" opacity=".65"/>
+  <circle cx="46" cy="21" r="3" fill="#AAA5B9" opacity=".35"/>
+  <text x="62" y="25" fill="#AAA5B9" font-family="monospace" font-size="10" letter-spacing="2">ACE // ESTABLISH CONNECTION</text>
+  <text x="794" y="25" fill="#BEAED5" font-family="monospace" font-size="9" text-anchor="end">NET-01</text>
+
+  <text x="28" y="69" fill="#AAA5B9" font-family="monospace" font-size="9" letter-spacing="2">SECURE HANDSHAKE PROTOCOL</text>
+  <text x="28" y="94" fill="#E8D5EF" font-family="monospace" font-size="17" letter-spacing="1">ESTABLISHING LINK...</text>
+
+  <g stroke="#BEAED5" stroke-width="1" fill="none" opacity=".65">
+    <path d="M74 164H195L245 126H355L405 164H520L574 126H718"/>
+    <path d="M74 164L150 211H277L326 180H450L502 211H656L718 164"/>
+    <path d="M195 164V126M355 126V95M520 164V194M574 126V95"/>
+    <path d="M245 126L277 211M405 164L450 180M574 126L656 211" stroke-opacity=".45"/>
+  </g>
+
+  <g fill="#08080F" stroke="#BEAED5" stroke-width="1.4">
+    <circle cx="74" cy="164" r="5"/>
+    <circle cx="195" cy="164" r="5"/>
+    <circle cx="245" cy="126" r="5"/>
+    <circle cx="355" cy="126" r="5"/>
+    <circle cx="405" cy="164" r="5"/>
+    <circle cx="520" cy="164" r="5"/>
+    <circle cx="574" cy="126" r="5"/>
+    <circle cx="718" cy="164" r="5"/>
+    <circle cx="150" cy="211" r="4"/>
+    <circle cx="277" cy="211" r="4"/>
+    <circle cx="450" cy="180" r="4"/>
+    <circle cx="656" cy="211" r="4"/>
+  </g>
+
+  <g fill="#E8D5EF">
+    <circle cx="74" cy="164" r="2"/>
+    <circle cx="355" cy="126" r="2"/>
+    <circle cx="520" cy="164" r="2"/>
+    <circle cx="718" cy="164" r="2"/>
+  </g>
+
+  <circle r="3" fill="#FFFFFF">
+    <animateMotion dur="4s" repeatCount="indefinite" path="M74 164H195L245 126H355L405 164H520L574 126H718"/>
+  </circle>
+  <circle r="2.5" fill="#BEAED5">
+    <animateMotion dur="5s" begin="-2s" repeatCount="indefinite" path="M718 164L656 211H502L450 180H326L277 211H150L74 164"/>
+  </circle>
+
+  <g font-family="monospace" font-size="8" fill="#AAA5B9">
+    <text x="61" y="151">NODE_01</text>
+    <text x="329" y="111">GATEWAY</text>
+    <text x="493" y="149">RELAY_04</text>
+    <text x="680" y="151">TARGET</text>
+  </g>
+
+  <path d="M28 235H792" stroke="#AAA5B9" stroke-opacity=".25"/>
+  <text x="28" y="253" fill="#AAA5B9" font-family="monospace" font-size="9">[SYS] Handshake initialized</text>
+  <text x="275" y="253" fill="#AAA5B9" font-family="monospace" font-size="9">[SEC] Encrypted channel ready</text>
+  <circle cx="599" cy="250" r="3" fill="#BEAED5">
+    <animate attributeName="opacity" values="1;.25;1" dur="1.6s" repeatCount="indefinite"/>
+  </circle>
+  <text x="610" y="253" fill="#E8D5EF" font-family="monospace" font-size="9" letter-spacing="1">LINK ACTIVE</text>
+  <text x="792" y="270" text-anchor="end" fill="#AAA5B9" opacity=".6" font-family="monospace" font-size="7">PROJECT ACE / CONNECTION MODULE</text>
+</svg>
