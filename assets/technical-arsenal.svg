@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="510" viewBox="0 0 900 510" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="510" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D0C1A"/>
+      <stop offset="1" stop-color="#08080F"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#111020"/>
+      <stop offset="1" stop-color="#0A0913"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#E8D5EF"/>
+      <stop offset="1" stop-color="#AAA5B9"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" stroke="#AAA5B9" stroke-opacity=".055" stroke-width=".7"/>
+    </pattern>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <style>
+      .mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; }
+      .heading { font-family: 'SFMono-Regular', Consolas, monospace; font-size: 13px; font-weight: 700; letter-spacing: 2px; fill: #E8D5EF; }
+      .muted { font-family: 'SFMono-Regular', Consolas, monospace; font-size: 10px; letter-spacing: 1.2px; fill: #AAA5B9; }
+      .skill { font-family: 'SFMono-Regular', Consolas, monospace; font-size: 13px; fill: #FFFFFF; }
+      .tiny { font-family: 'SFMono-Regular', Consolas, monospace; font-size: 9px; letter-spacing: 1px; fill: #AAA5B9; }
+      .frame { fill: url(#panel); stroke: #AAA5B9; stroke-opacity: .27; stroke-width: 1; }
+      .chip { fill: #0D0C1A; stroke: #AAA5B9; stroke-opacity: .23; stroke-width: 1; }
+      .glyph { font-family: 'SFMono-Regular', Consolas, monospace; font-size: 11px; font-weight: 700; fill: #E8D5EF; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- Main chassis -->
+  <rect x=".5" y=".5" width="899" height="509" rx="5" fill="url(#bg)" stroke="#AAA5B9" stroke-opacity=".5"/>
+  <rect x="1" y="1" width="898" height="508" rx="5" fill="url(#grid)"/>
+
+  <!-- Corner registration marks -->
+  <path d="M1 36H13M1 36V48M899 36H887M899 36V48M1 474H13M1 474V462M899 474H887M899 474V462"
+        stroke="#BEAED5" stroke-width="1.2"/>
+
+  <!-- Header -->
+  <rect x="20" y="18" width="3" height="37" fill="#BEAED5"/>
+  <text x="35" y="30" class="muted">SYSTEM MODULE / 02</text>
+  <text x="35" y="51" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" letter-spacing="1.5" fill="#FFFFFF">TECHNICAL ARSENAL</text>
+
+  <g transform="translate(745 20)">
+    <rect width="132" height="30" rx="2" fill="#0D0C1A" stroke="#AAA5B9" stroke-opacity=".35"/>
+    <circle cx="13" cy="15" r="3" fill="#BEAED5"/>
+    <circle cx="13" cy="15" r="6" stroke="#BEAED5" stroke-opacity=".22"/>
+    <text x="25" y="18.5" class="tiny">TECH INDEX</text>
+  </g>
+
+  <path d="M20 68H880" stroke="#AAA5B9" stroke-opacity=".3"/>
+  <path d="M20 68H170" stroke="#BEAED5" stroke-width="1.5"/>
+  <text x="22" y="84" class="tiny">CAPABILITY MATRIX</text>
+  <text x="878" y="84" class="tiny" text-anchor="end">CORE TECHNOLOGIES / 04 SECTORS</text>
+
+  <!-- Card 01 -->
+  <g transform="translate(20 98)">
+    <rect width="423" height="160" rx="3" class="frame"/>
+    <path d="M0 25H423" stroke="#AAA5B9" stroke-opacity=".22"/>
+    <path d="M0 0H34" stroke="#BEAED5" stroke-width="2"/>
+    <text x="15" y="17" class="heading">01 / LANGUAGES</text>
+    <text x="408" y="17" class="tiny" text-anchor="end">LANG</text>
+
+    <g transform="translate(15 39)">
+      <rect width="190" height="48" rx="3" class="chip"/>
+      <rect x="10" y="10" width="29" height="28" rx="3" fill="#AAA5B9" fill-opacity=".12" stroke="#AAA5B9" stroke-opacity=".45"/>
+      <text x="24.5" y="28" class="glyph">Py</text>
+      <text x="49" y="28" class="skill">Python</text>
+      <circle cx="175" cy="24" r="2.5" fill="#BEAED5"/>
+    </g>
+    <g transform="translate(218 39)">
+      <rect width="190" height="48" rx="3" class="chip"/>
+      <rect x="10" y="10" width="29" height="28" rx="3" fill="#AAA5B9" fill-opacity=".12" stroke="#AAA5B9" stroke-opacity=".45"/>
+      <text x="24.5" y="28" class="glyph">C++</text>
+      <text x="49" y="28" class="skill">C++</text>
+      <circle cx="175" cy="24" r="2.5" fill="#BEAED5"/>
+    </g>
+    <g transform="translate(15 98)">
+      <rect width="190" height="48" rx="3" class="chip"/>
+      <rect x="10" y="10" width="29" height="28" rx="3" fill="#AAA5B9" fill-opacity=".12" stroke="#AAA5B9" stroke-opacity=".45"/>
+      <text x="24.5" y="28" class="glyph">JS</text>
+      <text x="49" y="28" class="skill">JavaScript</text>
+      <circle cx="175" cy="24" r="2.5" fill="#BEAED5"/>
+    </g>
+    <g transform="translate(218 98)">
+      <rect width="190" height="48" rx="3" class="chip"/>
+      <rect x="10" y="10" width="29" height="28" rx="3" fill="#AAA5B9" fill-opacity=".12" stroke="#AAA5B9" stroke-opacity=".45"/>
+      <text x="24.5" y="28" class="glyph">SQL</text>
+      <text x="49" y="28" class="skill">SQL</text>
+      <circle cx="175" cy="24" r="2.5" fill="#BEAED5"/>
+    </g>
+  </g>
+
+  <!-- Card 02 -->
+  <g transform="translate(457 98)">
+    <rect width="423" height="160" rx="3" class="frame"/>
+    <path d="M0 25H423" stroke="#AAA5B9" stroke-opacity=".22"/>
+    <path d="M0 0H34" stroke="#BEAED5" stroke-width="2"/>
+    <text x="15" y="17" class="heading">02 / BACKEND &amp; DATA</text>
+    <text x="408" y="17" class="tiny" text-anchor="end">API / DB</text>
+
+    <g transform="translate(15 39)">
+      <rect width="190" height="48" rx="3" class="chip"/>
+      <rect x="10" y="10" width="29" height="28" rx="3" fill="#AAA5B9" fill-opacity=".12" stroke="#AAA5B9" stroke-opacity=".45"/>
+      <text x="24.5" y="28" class="glyph">Fa</text>
+      <text x="49" y="28" class="skill">FastAPI</text>
+      <circle cx="175" cy="24" r="2.5" fill="#BEAED5"/>
+    </g>
+    <g transform="translate(218 39)">
+      <rect width="190" height="48" rx="3" class="chip"/>
+      <rect x="10" y="10" width="29" height="28" rx="3" fill="#AAA5B9" fill-opacity=".12" stroke="#AAA5B9" stroke-opacity=".45"/>
+      <text x="24.5" y="28" class="glyph">N</text>
+      <text x="49" y="28" class="skill">Node.js</text>
+      <circle cx="175" cy="24" r="2.5" fill="#BEAED5"/>
+    </g>
+    <g transform="translate(15 98)">
+      <rect width="393" height="48" rx="3" class="chip"/>
+      <rect x="10" y="10" width="29" height="28" rx="3" fill="#AAA5B9" fill-opacity=".12" stroke="#AAA5B9" stroke-opacity=".45"/>
+      <text x="24.5" y="28" class="glyph">Pg</text>
+      <text x="49" y="28" class="skill">PostgreSQL</text>
+      <text x="378" y="28" class="tiny" text-anchor="end">RELATIONAL DATA</text>
+    </g>
+  </g>
+
+  <!-- Card 03 -->
+  <g transform="translate(20 272)">
+    <rect width="423" height="160" rx="3" class="frame"/>
+    <path d="M0 25H423" stroke="#AAA5B9" stroke-opacity=".22"/>
+    <path d="M0 0H34" stroke="#BEAED5" stroke-width="2"/>
+    <text x="15" y="17" class="heading">03 / FRONTEND &amp; VISUALIZATION</text>
+    <text x="408" y="17" class="tiny" text-anchor="end">UI / GEO</text>
+
+    <g transform="translate(15 39)">
+      <rect width="190" height="48" rx="3" class="chip"/>
+      <rect x="10" y="10" width="29" height="28" rx="3" fill="#AAA5B9" fill-opacity=".12" stroke="#AAA5B9" stroke-opacity=".45"/>
+      <text x="24.5" y="28" class="glyph">Re</text>
+      <text x="49" y="28" class="skill">React</text>
+      <circle cx="175" cy="24" r="2.5" fill="#BEAED5"/>
+    </g>
+    <g transform="translate(218 39)">
+      <rect width="190" height="48" rx="3" class="chip"/>
+      <rect x="10" y="10" width="29" height="28" rx="3" fill="#AAA5B9" fill-opacity=".12" stroke="#AAA5B9" stroke-opacity=".45"/>
+      <text x="24.5" y="28" class="glyph">3D</text>
+      <text x="49" y="28" class="skill">Three.js</text>
+      <circle cx="175" cy="24" r="2.5" fill="#BEAED5"/>
+    </g>
+    <g transform="translate(15 98)">
+      <rect width="190" height="48" rx="3" class="chip"/>
+      <rect x="10" y="10" width="29" height="28" rx="3" fill="#AAA5B9" fill-opacity=".12" stroke="#AAA5B9" stroke-opacity=".45"/>
+      <text x="24.5" y="28" class="glyph">D3</text>
+      <text x="49" y="28" class="skill">D3 Geo</text>
+      <circle cx="175" cy="24" r="2.5" fill="#BEAED5"/>
+    </g>
+    <g transform="translate(218 98)">
+      <rect width="190" height="48" rx="3" class="chip"/>
+      <rect x="10" y="10" width="29" height="28" rx="3" fill="#AAA5B9" fill-opacity=".12" stroke="#AAA5B9" stroke-opacity=".45"/>
+      <text x="24.5" y="28" class="glyph">Py</text>
+      <text x="49" y="28" class="skill">Pydantic</text>
+      <circle cx="175" cy="24" r="2.5" fill="#BEAED5"/>
+    </g>
+  </g>
+
+  <!-- Card 04 -->
+  <g transform="translate(457 272)">
+    <rect width="423" height="160" rx="3" class="frame"/>
+    <path d="M0 25H423" stroke="#AAA5B9" stroke-opacity=".22"/>
+    <path d="M0 0H34" stroke="#BEAED5" stroke-width="2"/>
+    <text x="15" y="17" class="heading">04 / TOOLS &amp; ENVIRONMENT</text>
+    <text x="408" y="17" class="tiny" text-anchor="end">DEV OPS</text>
+
+    <g transform="translate(15 39)">
+      <rect width="190" height="48" rx="3" class="chip"/>
+      <rect x="10" y="10" width="29" height="28" rx="3" fill="#AAA5B9" fill-opacity=".12" stroke="#AAA5B9" stroke-opacity=".45"/>
+      <text x="24.5" y="28" class="glyph">Git</text>
+      <text x="49" y="28" class="skill">Git</text>
+      <circle cx="175" cy="24" r="2.5" fill="#BEAED5"/>
+    </g>
+    <g transform="translate(218 39)">
+      <rect width="190" height="48" rx="3" class="chip"/>
+      <rect x="10" y="10" width="29" height="28" rx="3" fill="#AAA5B9" fill-opacity=".12" stroke="#AAA5B9" stroke-opacity=".45"/>
+      <text x="24.5" y="28" class="glyph">GH</text>
+      <text x="49" y="28" class="skill">GitHub</text>
+      <circle cx="175" cy="24" r="2.5" fill="#BEAED5"/>
+    </g>
+    <g transform="translate(15 98)">
+      <rect width="190" height="48" rx="3" class="chip"/>
+      <rect x="10" y="10" width="29" height="28" rx="3" fill="#AAA5B9" fill-opacity=".12" stroke="#AAA5B9" stroke-opacity=".45"/>
+      <text x="24.5" y="28" class="glyph">VS</text>
+      <text x="49" y="28" class="skill">VS Code</text>
+      <circle cx="175" cy="24" r="2.5" fill="#BEAED5"/>
+    </g>
+    <g transform="translate(218 98)">
+      <rect width="190" height="48" rx="3" class="chip"/>
+      <rect x="10" y="10" width="29" height="28" rx="3" fill="#AAA5B9" fill-opacity=".12" stroke="#AAA5B9" stroke-opacity=".45"/>
+      <text x="24.5" y="28" class="glyph">Li</text>
+      <text x="49" y="28" class="skill">Linux</text>
+      <circle cx="175" cy="24" r="2.5" fill="#BEAED5"/>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <path d="M20 450H880" stroke="#AAA5B9" stroke-opacity=".3"/>
+  <path d="M20 450H90" stroke="#BEAED5" stroke-width="1.5"/>
+  <text x="22" y="472" class="tiny">ACE / TECHNICAL SUBSYSTEM</text>
+  <text x="450" y="472" class="tiny" text-anchor="middle">BUILT FOR DATA · CODE · VISUALIZATION</text>
+  <text x="878" y="472" class="tiny" text-anchor="end">END OF INDEX //</text>
+  <rect x="20" y="488" width="860" height="2" fill="#AAA5B9" fill-opacity=".12"/>
+  <rect x="20" y="488" width="218" height="2" fill="url(#accent)"/>
+  <rect x="238" y="488" width="36" height="2" fill="#BEAED5" fill-opacity=".3"/>
+</svg>
