@@ -63,7 +63,7 @@
 
   <g font-family="monospace" font-size="8" fill="#AAA5B9">
     <text x="61" y="151">NODE_01</text>
-    <text x="329" y="111">GATEWAY</text>
+    <text x="300" y="111">GATEWAY</text>
     <text x="493" y="149">RELAY_04</text>
     <text x="680" y="151">TARGET</text>
   </g>
