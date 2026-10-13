@@ -1,0 +1,297 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="300" viewBox="0 0 820 300" fill="none">
+  <defs>
+    <linearGradient id="warpLight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#BEAED5" stop-opacity="0"/>
+      <stop offset=".55" stop-color="#BEAED5" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#E8D5EF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="hull" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#E8D5EF"/>
+      <stop offset=".38" stop-color="#AAA5B9"/>
+      <stop offset="1" stop-color="#514B68"/>
+    </linearGradient>
+    <linearGradient id="wing" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#AAA5B9"/>
+      <stop offset=".55" stop-color="#49445F"/>
+      <stop offset="1" stop-color="#211F32"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#E8D5EF"/>
+      <stop offset=".3" stop-color="#988ABF"/>
+      <stop offset="1" stop-color="#35304E"/>
+    </linearGradient>
+    <linearGradient id="engine" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#BEAED5" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#BEAED5"/>
+      <stop offset="1" stop-color="#E8D5EF" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop stop-color="#BEAED5" stop-opacity=".25"/>
+      <stop offset="1" stop-color="#BEAED5" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" stroke="#AAA5B9" stroke-opacity=".055" stroke-width=".7"/>
+    </pattern>
+    <clipPath id="viewport">
+      <rect x="1" y="1" width="818" height="298" rx="12"/>
+    </clipPath>
+  </defs>
+
+  <rect width="820" height="300" rx="12" fill="#08080F"/>
+  <g clip-path="url(#viewport)">
+    <rect width="820" height="300" fill="url(#grid)"/>
+    <ellipse cx="445" cy="150" rx="300" ry="135" fill="url(#glow)"/>
+
+    <!-- Distant stars -->
+    <g fill="#E8D5EF">
+      <circle cx="90" cy="88" r="1.2"/>
+      <circle cx="166" cy="213" r="1"/>
+      <circle cx="260" cy="70" r="1.4"/>
+      <circle cx="330" cy="236" r="1"/>
+      <circle cx="530" cy="55" r="1.2"/>
+      <circle cx="650" cy="226" r="1.1"/>
+      <circle cx="748" cy="88" r="1.3"/>
+      <circle cx="770" cy="183" r="1"/>
+    </g>
+    <g stroke="#BEAED5" stroke-width="1" stroke-linecap="round" opacity=".6">
+      <path d="M124 145h14 M131 138v14"/>
+      <path d="M701 120h10 M706 115v10"/>
+      <path d="M576 248h12 M582 242v12"/>
+    </g>
+
+    <!-- Moving star streaks -->
+    <g stroke="#BEAED5" stroke-linecap="round">
+      <path d="M80 125h45" opacity=".5">
+        <animate attributeName="x1" values="100;0" dur="2.8s" repeatCount="indefinite"/>
+        <animate attributeName="x2" values="145;45" dur="2.8s" repeatCount="indefinite"/>
+      </path>
+      <path d="M650 72h28" opacity=".4">
+        <animate attributeName="x1" values="700;560" dur="3.5s" repeatCount="indefinite"/>
+        <animate attributeName="x2" values="728;588" dur="3.5s" repeatCount="indefinite"/>
+      </path>
+      <path d="M390 260h35" opacity=".35">
+        <animate attributeName="x1" values="430;290" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="x2" values="465;325" dur="3s" repeatCount="indefinite"/>
+      </path>
+    </g>
+
+
+    
+    <!-- LIGHT-SPEED BACKGROUND -->
+    <g clip-path="url(#viewport)" stroke-linecap="round">
+    
+      <!-- Layer A: fast, long streaks -->
+      <g stroke="url(#warpLight)" stroke-width="1.5" opacity=".9">
+        <path d="M20 76H140"/>
+        <path d="M150 111H290"/>
+        <path d="M70 190H230"/>
+        <path d="M280 69H370"/>
+        <path d="M510 91H665"/>
+        <path d="M600 205H780"/>
+        <path d="M390 224H500"/>
+        <path d="M680 135H815"/>
+        <path d="M220 245H345"/>
+        <path d="M450 61H535"/>
+        <path d="M20 153H105"/>
+        <path d="M560 245H640"/>
+    
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          values="820 0;0 0"
+          dur="1.15s"
+          repeatCount="indefinite"/>
+      </g>
+    
+      <!-- Layer B: seamless continuation -->
+      <g stroke="url(#warpLight)" stroke-width="1.5" opacity=".9"
+         transform="translate(820 0)">
+        <path d="M20 76H140"/>
+        <path d="M150 111H290"/>
+        <path d="M70 190H230"/>
+        <path d="M280 69H370"/>
+        <path d="M510 91H665"/>
+        <path d="M600 205H780"/>
+        <path d="M390 224H500"/>
+        <path d="M680 135H815"/>
+        <path d="M220 245H345"/>
+        <path d="M450 61H535"/>
+        <path d="M20 153H105"/>
+        <path d="M560 245H640"/>
+    
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          values="820 0;0 0"
+          dur="1.15s"
+          repeatCount="indefinite"/>
+      </g>
+    
+      <!-- Layer C: thin, faster-looking diagonal streaks -->
+      <g stroke="#E8D5EF" stroke-width=".8" opacity=".55">
+        <path d="M45 95L125 87"/>
+        <path d="M180 222L260 210"/>
+        <path d="M325 91L390 84"/>
+        <path d="M540 116L630 107"/>
+        <path d="M630 181L725 166"/>
+        <path d="M390 245L450 239"/>
+    
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          values="820 0;0 0"
+          dur=".75s"
+          repeatCount="indefinite"/>
+      </g>
+    
+      <!-- Layer D: subtle warp pulses -->
+      <g stroke="#BEAED5" stroke-width="1" opacity=".32">
+        <path d="M30 130H200"/>
+        <path d="M460 76H590"/>
+        <path d="M580 225H760"/>
+        <path d="M200 58H280"/>
+        <path d="M350 202H445"/>
+    
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          values="820 0;0 0"
+          dur="1.8s"
+          repeatCount="indefinite"/>
+        <animate
+          attributeName="opacity"
+          values=".12;.42;.12"
+          dur="1.8s"
+          repeatCount="indefinite"/>
+      </g>
+    </g>
+
+    
+    <!-- Engine light -->
+    <ellipse cx="351" cy="158" rx="105" ry="38" fill="#BEAED5" opacity=".1" filter="url(#softGlow)"/>
+
+    <g>
+      <animateTransform attributeName="transform" type="translate"
+        values="0 0;0 -3;0 0;0 2;0 0" dur="5s" repeatCount="indefinite"/>
+
+      <!-- Rear engine trails -->
+      
+      <!-- Layered plasma exhaust -->
+      <path d="M302 145H230L165 150H302Z"
+        fill="url(#engine)" opacity=".8">
+        <animate attributeName="opacity"
+          values=".45;1;.6;.85;.45"
+          dur=".65s" repeatCount="indefinite"/>
+      </path>
+      
+      <path d="M302 160H245L185 155H302Z"
+        fill="url(#warpLight)" opacity=".9">
+        <animate attributeName="opacity"
+          values=".9;.35;.8;.5;.9"
+          dur=".42s" repeatCount="indefinite"/>
+      </path>
+      
+      <path d="M302 171H250L210 164H302Z"
+        fill="url(#engine)" opacity=".7">
+        <animate attributeName="opacity"
+          values=".3;.8;.4;.9;.3"
+          dur=".8s" repeatCount="indefinite"/>
+      </path>
+
+
+      <!-- Upper swept wing -->
+      <path d="M388 137L332 99L273 91L310 133L354 150Z"
+        fill="url(#wing)" stroke="#AAA5B9" stroke-opacity=".7" stroke-width="1.2"/>
+      <path d="M332 105L301 101L325 128L355 143"
+        stroke="#E8D5EF" stroke-opacity=".55" stroke-width="1"/>
+      <path d="M307 105L326 125" stroke="#BEAED5" stroke-width="2"/>
+
+      <!-- Lower swept wing -->
+      <path d="M387 168L329 205L274 211L311 172L354 155Z"
+        fill="url(#wing)" stroke="#AAA5B9" stroke-opacity=".7" stroke-width="1.2"/>
+      <path d="M330 199L301 202L325 177L355 161"
+        stroke="#E8D5EF" stroke-opacity=".5" stroke-width="1"/>
+      <path d="M307 198L326 178" stroke="#BEAED5" stroke-width="2"/>
+
+      <!-- Wing signal lights -->
+      <circle cx="280" cy="94" r="2.2" fill="#E8D5EF"/>
+      <circle cx="280" cy="208" r="2.2" fill="#E8D5EF"/>
+      <circle cx="280" cy="94" r="5" fill="#BEAED5" opacity=".25"/>
+      <circle cx="280" cy="208" r="5" fill="#BEAED5" opacity=".25"/>
+
+      <!-- Rear twin engine housings -->
+      <path d="M337 140L305 133L299 145L337 153Z"
+        fill="#3C3851" stroke="#AAA5B9" stroke-width="1"/>
+      <path d="M337 166L305 173L299 161L337 153Z"
+        fill="#3C3851" stroke="#AAA5B9" stroke-width="1"/>
+      <path d="M304 138L292 143L292 151L307 150Z" fill="#BEAED5"/>
+      <path d="M304 168L292 163L292 155L307 156Z" fill="#BEAED5"/>
+
+      <!-- Main fuselage -->
+      <path d="M316 151L350 133L415 125L488 128L551 140L592 150L551 160L488 172L415 175L350 166Z"
+        fill="url(#hull)" stroke="#E8D5EF" stroke-width="1.15"/>
+
+      <!-- Lower armor contour -->
+      <path d="M350 166L415 175L488 172L535 163L461 181L393 180L349 171Z"
+        fill="#373249" stroke="#AAA5B9" stroke-opacity=".6" stroke-width=".8"/>
+
+      <!-- Nose armor -->
+      <path d="M488 128L551 140L592 150L551 160L488 172L510 153Z"
+        fill="#D4C8DF" fill-opacity=".42" stroke="#E8D5EF" stroke-opacity=".65" stroke-width=".8"/>
+      <path d="M510 153L592 150" stroke="#E8D5EF" stroke-opacity=".8" stroke-width="1"/>
+
+      <!-- Cockpit frame -->
+      <path d="M403 137L439 131L470 135L485 147L451 150L412 148Z"
+        fill="#373249" stroke="#E8D5EF" stroke-width="1.1"/>
+      <!-- Cockpit glass -->
+      <path d="M411 139L441 134L464 137L476 145L450 146L418 145Z"
+        fill="url(#glass)" stroke="#BEAED5" stroke-width=".8"/>
+      <path d="M420 139L441 135" stroke="#FFFFFF" stroke-opacity=".8" stroke-width="1.5"/>
+      <path d="M447 136L459 138L468 144" stroke="#E8D5EF" stroke-opacity=".65" stroke-width=".8"/>
+
+      <!-- Hull panel lines -->
+      <path d="M368 140L358 150L368 162" stroke="#514B68" stroke-width="1.2"/>
+      <path d="M385 139L378 150L385 162" stroke="#514B68" stroke-width="1.2"/>
+      <path d="M493 135L485 149L493 164" stroke="#AAA5B9" stroke-opacity=".8" stroke-width="1"/>
+      <path d="M520 140L513 150L520 160" stroke="#514B68" stroke-width="1"/>
+      <path d="M397 155L426 157L443 154" stroke="#514B68" stroke-width=".8"/>
+
+      <!-- Technical markings -->
+      <path d="M356 147h12 M356 151h8 M356 155h10"
+        stroke="#E8D5EF" stroke-opacity=".65" stroke-width="1"/>
+      <rect x="471" y="153" width="10" height="3" rx="1" fill="#BEAED5"/>
+      <circle cx="541" cy="149" r="2" fill="#E8D5EF"/>
+      <circle cx="541" cy="149" r="4.5" fill="#BEAED5" opacity=".22"/>
+
+      <!-- Nose highlight -->
+      <path d="M489 129L548 141L579 149"
+        stroke="#FFFFFF" stroke-opacity=".7" stroke-width="1.2" stroke-linecap="round"/>
+
+      <!-- Underside sensor -->
+      <path d="M420 174L438 180L457 175" stroke="#AAA5B9" stroke-width="1"/>
+      <circle cx="439" cy="178" r="2" fill="#BEAED5"/>
+    </g>
+
+    <!-- Minimal HUD labels -->
+    <g font-family="monospace" font-size="9" letter-spacing="1.5" fill="#AAA5B9">
+      <text x="26" y="29">ACE // ACTIVITY ARCADE</text>
+      <text x="26" y="43" fill="#BEAED5" font-size="8">01 — SPACE RUN</text>
+      <text x="794" y="29" text-anchor="end">FLIGHT SIMULATION</text>
+      <text x="794" y="43" text-anchor="end" opacity=".65">SECTOR 07 / DEEP SPACE</text>
+      <text x="26" y="274" opacity=".7">VESSEL: EXPLORER-01</text>
+      <text x="794" y="274" text-anchor="end" opacity=".7">PROPULSION: ACTIVE</text>
+    </g>
+
+    <!-- HUD separators -->
+    <path d="M26 54H125 M695 54H794 M26 258H145 M675 258H794"
+      stroke="#AAA5B9" stroke-opacity=".25" stroke-width="1"/>
+    <path d="M26 54h22 M26 54v10 M794 54h-22 M794 54v10"
+      stroke="#BEAED5" stroke-width="1.2"/>
+  </g>
+
+  <rect x=".5" y=".5" width="819" height="299" rx="12"
+    stroke="#AAA5B9" stroke-opacity=".38"/>
+</svg>
