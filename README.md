@@ -116,32 +116,34 @@ Project ACE is a real-time global data terminal built to explore the events shap
 ## ◉│ GITHUB SIGNAL
 
 
-<!-- GITHUB SIGNAL: LIVE PROFILE DATA -->
+## `04` / GITHUB SIGNAL
+
+
+## `04` / GITHUB SIGNAL
 
 <div align="center">
-
-  <img
-    src="assets/github-signal.svg"
-    width="100%"
-    alt="ACE GitHub Signal Terminal"
-  />
-
-  <br/>
-
-  <img
-    width="49%"
-    src="https://github-readme-stats.vercel.app/api?username=otp-katana&show_icons=true&hide_border=true&bg_color=08080F&title_color=BEAED5&icon_color=BEAED5&text_color=E8D5EF&border_color=AAA5B9&rank_icon=github"
-    alt="GitHub Profile Statistics"
-  />
-  <img
-    width="49%"
-    src="https://github-readme-streak-stats.herokuapp.com/?user=otp-katana&hide_border=true&background=08080F&border=08080F&stroke=AAA5B9&ring=BEAED5&fire=E8D5EF&currStreakLabel=BEAED5&sideLabels=AAA5B9&currStreakNum=FFFFFF&sideNums=E8D5EF&dates=AAA5B9"
-    alt="GitHub Contribution Streak"
-  />
-
+  <table>
+    <tr>
+      <td align="center" width="50%">
+        <img
+          src="https://github-readme-stats.vercel.app/api?username=otp-katana&amp;show_icons=true&amp;hide_border=true&amp;bg_color=08080F&amp;title_color=BEAED5&amp;icon_color=BEAED5&amp;text_color=E8D5EF&amp;rank_icon=github"
+          width="100%"
+          alt="GitHub Profile Statistics"
+        />
+      </td>
+      <td align="center" width="50%">
+        <img
+          src="https://github-readme-streak-stats.herokuapp.com/?user=otp-katana&amp;hide_border=true&amp;background=08080F&amp;stroke=AAA5B9&amp;ring=BEAED5&amp;fire=E8D5EF&amp;currStreakLabel=BEAED5&amp;sideLabels=AAA5B9&amp;currStreakNum=FFFFFF&amp;sideNums=E8D5EF&amp;dates=AAA5B9"
+          width="100%"
+          alt="GitHub Contribution Streak"
+        />
+      </td>
+    </tr>
+  </table>
 </div>
 
 ---
+
 
 
 ## `05` / ESTABLISH CONNECTION
