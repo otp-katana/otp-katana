@@ -115,12 +115,6 @@ Project ACE is a real-time global data terminal built to explore the events shap
 
 ## ◉│ GITHUB SIGNAL
 
-
-## `04` / GITHUB SIGNAL
-
-
-## `04` / GITHUB SIGNAL
-
 <div align="center">
   <table>
     <tr>
