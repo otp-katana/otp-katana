@@ -95,7 +95,7 @@ Project ACE is a real-time global data terminal built to explore the events shap
 ---
 
 
-## ✈│ ACTIVITY ARCADE
+## ⦔│ ACTIVITY ARCADE
 
 <p align="center">
   <img src="assets/space-run.svg" width="100%" alt="Space Run — Activity Arcade">
