@@ -138,24 +138,8 @@ Project ACE is a real-time global data terminal built to explore the events shap
 
 
 
-## `05` / ESTABLISH CONNECTION
+## ⍚│ ESTABLISH CONNECTION
 
 <div align="center">
-
-<a href="https://github.com/otp-katana">
-  <img src="https://img.shields.io/badge/GitHub-08080F?style=for-the-badge&logo=github&logoColor=E8D5EF" />
-</a>
-<a href="YOUR_LINKEDIN_URL">
-  <img src="https://img.shields.io/badge/LinkedIn-08080F?style=for-the-badge&logo=linkedin&logoColor=A371F7" />
-</a>
-<a href="mailto:YOUR_EMAIL">
-  <img src="https://img.shields.io/badge/Email-08080F?style=for-the-badge&logo=gmail&logoColor=A371F7" />
-</a>
-
-<br/><br/>
-
-<img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="100%" />
-
-<sub>Building quietly. Thinking systemically. Shipping deliberately.</sub>
-
+  <img src="assets/establish-connection.svg" width="100%" alt="ACE Establish Connection interface" />
 </div>
