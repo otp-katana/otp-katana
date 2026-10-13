@@ -1,14 +1,14 @@
- <div align="center">
+ 
+<div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=venom&height=220&color=0:08080F,50:301052,100:A371F7&text=katana.&fontSize=76&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=DATA%20ENGINEER%20%2F%20SYSTEMS%20BUILDER&descSize=15&descColor=E8D5EF&descAlignY=60" width="100%" />
-
-<br/>
-
-[![Profile Views](https://komarev.com/ghpvc/?username=otp-katana&style=flat-square&color=8B5CF6&label=PROFILE+VIEWS)](https://github.com/otp-katana)
-
-**Engineering systems. Connecting data. Exploring the unknown.**
+<img
+  src="https://capsule-render.vercel.app/api?type=rect&height=240&color=0:09090F,50:211333,100:09090F&text=KATANA.&fontSize=76&fontColor=FFFFFF&fontAlignY=43&fontFamily=Orbitron&animation=fadeIn&desc=DATA%20ENGINEER%20%2F%20SYSTEMS%20ARCHITECTURE&descSize=16&descColor=C9A7FF&descAlignY=62"
+  width="100%"
+  alt="katana. — Data Engineer"
+/>
 
 </div>
+
 
 ---
 
