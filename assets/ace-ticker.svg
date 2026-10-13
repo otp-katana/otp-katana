@@ -47,16 +47,18 @@
         dur="150s" repeatCount="indefinite"/>
 
       <text x="0" y="70" fill="#F0E7FA"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="30" font-weight="500"
+        font-family="Inter, Arial, Helvetica, sans-serif"
+        font-size="30"
+        font-weight="700"
         dominant-baseline="middle"
-        textLength="7400" lengthAdjust="spacingAndGlyphs">Dil olmazsa kültür olmaz. Kültür olmazsa kimlik, kimlik olmazsa haysiyet, onur olmaz. O halde Türk Devletinin birinci görevi Türk adını, varlığını, kimliğini korumak, tarihten silinmesini önlemek olacağına göre, Türk Devletinin başta gelen işi, milli savunma görevi, Türk dilini yaşatmak, gelişmesine destek olmak, onun için de eğitimini Türkçe yapmak, her dalda, edebiyatta, bilim ve teknikte Türkçe telif ve tercüme eserleri teşvik etmek, olmalıdır. ◇ </text>
+        textLength="7400" lengthAdjust="spacingAndGlyphs">DİL OLMAZSA KÜLTÜR OLMAZ. KÜLTÜR OLMAZSA KİMLİK, KİMLİK OLMAZSA HAYSİYET, ONUR OLMAZ. O HALDE TÜRK DEVLETİNİN BİRİNCİ GÖREVİ TÜRK ADINI, VARLIĞINI, KİMLİĞİNİ KORUMAK, TARİHTEN SİLİNMESİNİ ÖNLEMEK OLACAĞINA GÖRE, TÜRK DEVLETİNİN BAŞTA GELEN İŞİ, MİLLİ SAVUNMA GÖREVİ, TÜRK DİLİNİ YAŞATMAK, GELİŞMESİNE DESTEK OLMAK, ONUN İÇİN DE EĞİTİMİNİ TÜRKÇE YAPMAK, HER DALDA, EDEBİYATTA, BİLİM VE TEKNİKTE TÜRKÇE TELİF VE TERCÜME ESERLERİ TEŞVİK ETMEK, OLMALIDIR. ◇ </text>
 
       <text x="7400" y="70" fill="#F0E7FA"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="30" font-weight="500"
+        font-family="Inter, Arial, Helvetica, sans-serif"
+        font-size="30"
+        font-weight="700"
         dominant-baseline="middle"
-        textLength="7400" lengthAdjust="spacingAndGlyphs">Dil olmazsa kültür olmaz. Kültür olmazsa kimlik, kimlik olmazsa haysiyet, onur olmaz. O halde Türk Devletinin birinci görevi Türk adını, varlığını, kimliğini korumak, tarihten silinmesini önlemek olacağına göre, Türk Devletinin başta gelen işi, milli savunma görevi, Türk dilini yaşatmak, gelişmesine destek olmak, onun için de eğitimini Türkçe yapmak, her dalda, edebiyatta, bilim ve teknikte Türkçe telif ve tercüme eserleri teşvik etmek, olmalıdır. ◇ </text>
+        textLength="7400" lengthAdjust="spacingAndGlyphs">DİL OLMAZSA KÜLTÜR OLMAZ. KÜLTÜR OLMAZSA KİMLİK, KİMLİK OLMAZSA HAYSİYET, ONUR OLMAZ. O HALDE TÜRK DEVLETİNİN BİRİNCİ GÖREVİ TÜRK ADINI, VARLIĞINI, KİMLİĞİNİ KORUMAK, TARİHTEN SİLİNMESİNİ ÖNLEMEK OLACAĞINA GÖRE, TÜRK DEVLETİNİN BAŞTA GELEN İŞİ, MİLLİ SAVUNMA GÖREVİ, TÜRK DİLİNİ YAŞATMAK, GELİŞMESİNE DESTEK OLMAK, ONUN İÇİN DE EĞİTİMİNİ TÜRKÇE YAPMAK, HER DALDA, EDEBİYATTA, BİLİM VE TEKNİKTE TÜRKÇE TELİF VE TERCÜME ESERLERİ TEŞVİK ETMEK, OLMALIDIR. ◇ </text>
     </g>
   </g>
 
