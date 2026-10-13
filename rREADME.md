@@ -1,12 +1,9 @@
- 
-<div align="center">
-
-<img
-  src="./assets/katana-header.svg"
-  width="100%"
-  alt="katana. — Data Engineer"
-/>
-
+ <div align="center">
+  <img
+    src="./assets/katana-header.svg"
+    width="100%"
+    alt="katana. — Data Engineer"
+  />
 </div>
 
 
