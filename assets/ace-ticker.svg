@@ -42,7 +42,7 @@
 
     <g>
       <animateTransform attributeName="transform" type="translate"
-        from="0 0" to="-7400 0"
+        from="489 0" to="-7400 0"
         dur="150s" repeatCount="indefinite"/>
 
       <text x="0" y="70" fill="#FFFFFF"
@@ -61,6 +61,15 @@
     </g>
   </g>
 
+
+  <text x="506" y="124"
+      text-anchor="end"
+      fill="#AAA5B9"
+      font-family="monospace"
+      font-size="10"
+      letter-spacing=".8"
+      opacity=".85">OKTAY SİNANOĞLU</text>
+  
   <text x="506" y="18" text-anchor="end"
         fill="#AAA5B9" font-family="monospace"
         font-size="7" letter-spacing="1">QUOTE FEED</text>
