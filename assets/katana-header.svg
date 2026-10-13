@@ -70,75 +70,114 @@
    
      <!-- CYBERNETIC DIMENSION GATE -->
      
-     <!-- Deep portal cavity -->
-     <path d="M340 18H860L910 65V255L860 302H340L290 255V65Z"
-           fill="#0D0C1A" fill-opacity=".88"
-           stroke="#AAA5B9" stroke-opacity=".25"/>
-     
-     <!-- Outer architectural frame -->
-     <path d="M350 30H850L896 72V248L850 290H350L304 248V72Z"
-           fill="none"
-           stroke="#BEAED5" stroke-opacity=".35"
-           stroke-width="1.2"/>
-     
-     <!-- Hard-edged dimensional layers -->
-     <path d="M390 43H810L866 88V232L810 277H390L334 232V88Z"
-           fill="#08080F" fill-opacity=".8"
-           stroke="#AAA5B9" stroke-opacity=".4"/>
-     
-     <path d="M430 56H770L836 101V219L770 264H430L364 219V101Z"
-           fill="#0D0C1A"
-           stroke="#BEAED5" stroke-opacity=".6"/>
-     
-     <!-- Receding inner aperture -->
-     <path d="M470 69H730L804 112V208L730 251H470L396 208V112Z"
-           fill="#08080F"
-           stroke="#E8D5EF" stroke-opacity=".42"/>
-     
-     <path d="M510 82H690L770 122V198L690 238H510L430 198V122Z"
-           fill="#0D0C1A"
-           stroke="#BEAED5" stroke-opacity=".72"/>
-     
-     <!-- Fractured energy seams -->
-     <g fill="none" stroke="#BEAED5"
-        stroke-width="1.5" stroke-linejoin="miter">
-       <path d="M350 30L385 58H420L442 76"/>
-       <path d="M850 30L815 58H780L758 76"/>
-       <path d="M350 290L385 262H420L442 244"/>
-       <path d="M850 290L815 262H780L758 244"/>
-     </g>
-     
-     <!-- High-energy edge accents -->
-     <g fill="none" stroke="#E8D5EF"
-        stroke-width="2" stroke-linecap="square">
-       <path d="M304 72L326 92H352"/>
-       <path d="M896 72L874 92H848"/>
-       <path d="M304 248L326 228H352"/>
-       <path d="M896 248L874 228H848"/>
-     </g>
-     
-     <!-- Technical gate nodes -->
-     <g fill="#E8D5EF">
-       <path d="M390 43H404V45H390Z"/>
-       <path d="M796 43H810V45H796Z"/>
-       <path d="M390 275H404V277H390Z"/>
-       <path d="M796 275H810V277H796Z"/>
-     </g>
-     
-     <!-- Subtle energy pulse -->
-     <path d="M430 122L510 82H690L770 122"
-           fill="none" stroke="#BEAED5"
-           stroke-width="2" stroke-opacity=".55"/>
-     
-     <path d="M430 198L510 238H690L770 198"
-           fill="none" stroke="#BEAED5"
-           stroke-width="2" stroke-opacity=".55"/>
-     
-     <path d="M470 69H730"
-           stroke="#E8D5EF" stroke-opacity=".45"/>
-     
-     <path d="M470 251H730"
-           stroke="#E8D5EF" stroke-opacity=".45"/>
+<!-- DIMENSION GATE: FRACTURE SEQUENCE -->
+<g id="dimension-gate">
+
+  <!-- Dark opening behind the shards -->
+  <path d="M470 69H730L804 112V208L730 251H470L396 208V112Z"
+        fill="#08080F" stroke="#BEAED5"
+        stroke-opacity=".55" stroke-width="1.5"/>
+
+  <!-- Inner depth aperture -->
+  <path d="M510 91H690L750 126V194L690 229H510L450 194V126Z"
+        fill="#0D0C1A" stroke="#AAA5B9"
+        stroke-opacity=".35"/>
+
+  <!-- Upper-left shard -->
+  <polygon points="470,69 535,69 570,112 510,126 450,112 396,112"
+           fill="#151124" stroke="#BEAED5" stroke-opacity=".8">
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0; -17 -13; -17 -13; 0 0"
+      keyTimes="0;0.2;0.72;1" dur="4.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity"
+      values="1;1;.82;1" dur="4.8s" repeatCount="indefinite"/>
+  </polygon>
+
+  <!-- Upper-center shard -->
+  <polygon points="535,69 665,69 690,91 630,112 570,112"
+           fill="#211832" stroke="#E8D5EF" stroke-opacity=".7">
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0; 0 -19; 0 -19; 0 0"
+      keyTimes="0;0.2;0.72;1" dur="4.8s"
+      begin=".04s" repeatCount="indefinite"/>
+  </polygon>
+
+  <!-- Upper-right shard -->
+  <polygon points="665,69 730,69 804,112 750,126 690,112"
+           fill="#171226" stroke="#BEAED5" stroke-opacity=".8">
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0; 18 -12; 18 -12; 0 0"
+      keyTimes="0;0.2;0.72;1" dur="4.8s"
+      begin=".08s" repeatCount="indefinite"/>
+  </polygon>
+
+  <!-- Left-side shard -->
+  <polygon points="396,112 450,112 510,126 510,160 450,176 396,208"
+           fill="#171226" stroke="#BEAED5" stroke-opacity=".8">
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0; -24 0; -24 0; 0 0"
+      keyTimes="0;0.2;0.72;1" dur="4.8s"
+      begin=".02s" repeatCount="indefinite"/>
+  </polygon>
+
+  <!-- Right-side shard -->
+  <polygon points="690,112 750,126 804,112 804,208 750,176 690,160"
+           fill="#171226" stroke="#BEAED5" stroke-opacity=".8">
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0; 24 0; 24 0; 0 0"
+      keyTimes="0;0.2;0.72;1" dur="4.8s"
+      begin=".06s" repeatCount="indefinite"/>
+  </polygon>
+
+  <!-- Lower-left shard -->
+  <polygon points="396,208 450,176 510,194 570,208 535,251 470,251"
+           fill="#211832" stroke="#BEAED5" stroke-opacity=".8">
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0; -17 14; -17 14; 0 0"
+      keyTimes="0;0.2;0.72;1" dur="4.8s"
+      begin=".1s" repeatCount="indefinite"/>
+  </polygon>
+
+  <!-- Lower-center shard -->
+  <polygon points="510,194 570,208 630,208 690,229 665,251 535,251"
+           fill="#151124" stroke="#E8D5EF" stroke-opacity=".65">
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0; 0 19; 0 19; 0 0"
+      keyTimes="0;0.2;0.72;1" dur="4.8s"
+      begin=".05s" repeatCount="indefinite"/>
+  </polygon>
+
+  <!-- Lower-right shard -->
+  <polygon points="690,160 750,176 804,208 730,251 665,251 630,208"
+           fill="#171226" stroke="#BEAED5" stroke-opacity=".8">
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0; 18 14; 18 14; 0 0"
+      keyTimes="0;0.2;0.72;1" dur="4.8s"
+      begin=".12s" repeatCount="indefinite"/>
+  </polygon>
+
+  <!-- Energy flash across the aperture -->
+  <path d="M450 160H750"
+        fill="none" stroke="#E8D5EF" stroke-width="2"
+        stroke-linecap="square" opacity="0">
+    <animate attributeName="opacity"
+      values="0;0;1;.15;0;0"
+      keyTimes="0;.16;.21;.29;.4;1"
+      dur="4.8s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Fine energy fracture -->
+  <path d="M530 103L578 145L558 167L620 188L670 218"
+        fill="none" stroke="#BEAED5" stroke-width="1.5"
+        stroke-linecap="square" opacity=".2">
+    <animate attributeName="opacity"
+      values=".2;.2;1;.3;.2"
+      keyTimes="0;.16;.23;.38;1"
+      dur="4.8s" repeatCount="indefinite"/>
+  </path>
+
+</g>
+
 
 
     <!-- Circuit traces: left -->
