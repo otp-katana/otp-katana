@@ -1,8 +1,7 @@
-
 <svg xmlns="http://www.w3.org/2000/svg" width="520" height="140" viewBox="0 0 520 140">
   <defs>
     <linearGradient id="tickerBg" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#12101A"/>
+      <stop stop-color="#0D0C1A"/>
       <stop offset="1" stop-color="#08080F"/>
     </linearGradient>
     <clipPath id="tickerClip">
@@ -12,12 +11,12 @@
 
   <rect width="520" height="140" rx="8" fill="url(#tickerBg)"/>
   <rect x=".5" y=".5" width="519" height="139" rx="7.5"
-        fill="none" stroke="#BEAED5" stroke-opacity=".5"/>
+        fill="none" stroke="#AAA5B9" stroke-opacity=".5"/>
   <path d="M1 1 H110" stroke="#E8D5EF" stroke-width="1.5"/>
 
   <!-- Fixed label -->
   <rect x="10" y="22" width="130" height="96" rx="3"
-        fill="#0D0B15" stroke="#BEAED5" stroke-opacity=".7"/>
+        fill="#0D0C1A" stroke="#AAA5B9" stroke-opacity=".7"/>
   <path d="M10 22 H54" stroke="#E8D5EF" stroke-width="2"/>
 
   <circle cx="23" cy="39" r="3" fill="#E8D5EF">
@@ -27,33 +26,33 @@
   <text x="32" y="42" fill="#E8D5EF"
         font-family="monospace" font-size="9"
         letter-spacing="1">LANGUAGE</text>
-  <text x="20" y="62" fill="#E8D5EF"
+  <text x="20" y="62" fill="#FFFFFF"
         font-family="Arial, sans-serif" font-size="11"
         font-weight="600">IDENTITY / 01</text>
   <path d="M20 72 H128" stroke="#BEAED5" stroke-opacity=".55"/>
-  <text x="20" y="89" fill="#BEAED5"
+  <text x="20" y="89" fill="#AAA5B9"
         font-family="monospace" font-size="8">TÜRKÇE · KÜLTÜR</text>
-  <text x="20" y="104" fill="#BEAED5"
+  <text x="20" y="104" fill="#AAA5B9"
         font-family="monospace" font-size="7">A THOUGHT IN MOTION</text>
 
   <!-- Large continuous scrolling quotation -->
   <g clip-path="url(#tickerClip)">
     <path d="M151 8 H510 M151 132 H510"
-          stroke="#BEAED5" stroke-opacity=".45"/>
+          stroke="#AAA5B9" stroke-opacity=".45"/>
 
     <g>
       <animateTransform attributeName="transform" type="translate"
         from="0 0" to="-7400 0"
         dur="150s" repeatCount="indefinite"/>
 
-      <text x="0" y="70" fill="#F0E7FA"
+      <text x="0" y="70" fill="#FFFFFF"
         font-family="Inter, Arial, Helvetica, sans-serif"
         font-size="30"
         font-weight="700"
         dominant-baseline="middle"
         textLength="7400" lengthAdjust="spacingAndGlyphs">DİL OLMAZSA KÜLTÜR OLMAZ. KÜLTÜR OLMAZSA KİMLİK, KİMLİK OLMAZSA HAYSİYET, ONUR OLMAZ. O HALDE TÜRK DEVLETİNİN BİRİNCİ GÖREVİ TÜRK ADINI, VARLIĞINI, KİMLİĞİNİ KORUMAK, TARİHTEN SİLİNMESİNİ ÖNLEMEK OLACAĞINA GÖRE, TÜRK DEVLETİNİN BAŞTA GELEN İŞİ, MİLLİ SAVUNMA GÖREVİ, TÜRK DİLİNİ YAŞATMAK, GELİŞMESİNE DESTEK OLMAK, ONUN İÇİN DE EĞİTİMİNİ TÜRKÇE YAPMAK, HER DALDA, EDEBİYATTA, BİLİM VE TEKNİKTE TÜRKÇE TELİF VE TERCÜME ESERLERİ TEŞVİK ETMEK, OLMALIDIR. ◇ </text>
 
-      <text x="7400" y="70" fill="#F0E7FA"
+      <text x="7400" y="70" fill="#FFFFFF"
         font-family="Inter, Arial, Helvetica, sans-serif"
         font-size="30"
         font-weight="700"
@@ -63,6 +62,6 @@
   </g>
 
   <text x="506" y="18" text-anchor="end"
-        fill="#BEAED5" font-family="monospace"
+        fill="#AAA5B9" font-family="monospace"
         font-size="7" letter-spacing="1">QUOTE FEED</text>
 </svg>
