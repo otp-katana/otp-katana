@@ -6,34 +6,39 @@
 
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#09090F"/>
-      <stop offset="55%" stop-color="#211333"/>
-      <stop offset="100%" stop-color="#09090F"/>
+      <stop stop-color="#08080F"/>
+      <stop offset=".52" stop-color="#100D1C"/>
+      <stop offset="1" stop-color="#08080F"/>
     </linearGradient>
 
-    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#6D28D9" stop-opacity=".2"/>
-      <stop offset="50%" stop-color="#A371F7"/>
-      <stop offset="100%" stop-color="#6D28D9" stop-opacity=".2"/>
+    <linearGradient id="panelGlow" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#BEAED5" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#BEAED5" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#BEAED5" stop-opacity="0"/>
     </linearGradient>
 
-    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#A371F7" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#A371F7" stop-opacity=".13"/>
-      <stop offset="100%" stop-color="#A371F7" stop-opacity="0"/>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#E8D5EF"/>
+      <stop offset=".5" stop-color="#BEAED5"/>
+      <stop offset="1" stop-color="#AAA5B9"/>
     </linearGradient>
 
-    <pattern id="grid" width="40" height="40"
+    <pattern id="grid" width="24" height="24"
              patternUnits="userSpaceOnUse">
-      <path d="M40 0H0V40"
-            fill="none"
-            stroke="#A371F7"
-            stroke-opacity=".055"
-            stroke-width="1"/>
+      <path d="M24 0H0V24"
+            fill="none" stroke="#AAA5B9"
+            stroke-opacity=".055"/>
+    </pattern>
+
+    <pattern id="microGrid" width="4" height="4"
+             patternUnits="userSpaceOnUse">
+      <path d="M4 0H0V4"
+            fill="none" stroke="#BEAED5"
+            stroke-opacity=".07" stroke-width=".5"/>
     </pattern>
 
     <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -41,130 +46,266 @@
     </filter>
 
     <clipPath id="panel">
-      <rect width="1200" height="320" rx="8"/>
+      <rect width="1200" height="320" rx="7"/>
     </clipPath>
   </defs>
 
   <g clip-path="url(#panel)">
 
-    <!-- Background -->
+    <!-- Base -->
     <rect width="1200" height="320" fill="url(#bg)"/>
     <rect width="1200" height="320" fill="url(#grid)"/>
+    <rect width="1200" height="320" fill="url(#microGrid)" opacity=".35"/>
 
-    <!-- Ambient violet light -->
-    <ellipse cx="600" cy="145" rx="410" ry="135"
-             fill="#6D28D9" opacity=".10"/>
+    <!-- Angular background plates -->
+    <path d="M0 0H345L275 70H0Z"
+          fill="#0D0C1A"/>
+    <path d="M1200 0H920L1005 70H1200Z"
+          fill="#0D0C1A"/>
+    <path d="M0 320V257L90 190H220L150 320Z"
+          fill="#0D0C1A" opacity=".9"/>
+    <path d="M1200 320V255L1110 190H980L1050 320Z"
+          fill="#0D0C1A" opacity=".9"/>
 
-    <!-- Technical side details -->
-    <g fill="none" stroke="#A371F7" stroke-opacity=".24">
-      <path d="M0 82H150L174 106H245"/>
-      <path d="M1200 82H1050L1026 106H955"/>
-      <path d="M0 248H120L142 226H230"/>
-      <path d="M1200 248H1080L1058 226H970"/>
+   
+     <!-- CYBERNETIC DIMENSION GATE -->
+     
+     <!-- Deep portal cavity -->
+     <path d="M340 18H860L910 65V255L860 302H340L290 255V65Z"
+           fill="#0D0C1A" fill-opacity=".88"
+           stroke="#AAA5B9" stroke-opacity=".25"/>
+     
+     <!-- Outer architectural frame -->
+     <path d="M350 30H850L896 72V248L850 290H350L304 248V72Z"
+           fill="none"
+           stroke="#BEAED5" stroke-opacity=".35"
+           stroke-width="1.2"/>
+     
+     <!-- Hard-edged dimensional layers -->
+     <path d="M390 43H810L866 88V232L810 277H390L334 232V88Z"
+           fill="#08080F" fill-opacity=".8"
+           stroke="#AAA5B9" stroke-opacity=".4"/>
+     
+     <path d="M430 56H770L836 101V219L770 264H430L364 219V101Z"
+           fill="#0D0C1A"
+           stroke="#BEAED5" stroke-opacity=".6"/>
+     
+     <!-- Receding inner aperture -->
+     <path d="M470 69H730L804 112V208L730 251H470L396 208V112Z"
+           fill="#08080F"
+           stroke="#E8D5EF" stroke-opacity=".42"/>
+     
+     <path d="M510 82H690L770 122V198L690 238H510L430 198V122Z"
+           fill="#0D0C1A"
+           stroke="#BEAED5" stroke-opacity=".72"/>
+     
+     <!-- Fractured energy seams -->
+     <g fill="none" stroke="#BEAED5"
+        stroke-width="1.5" stroke-linejoin="miter">
+       <path d="M350 30L385 58H420L442 76"/>
+       <path d="M850 30L815 58H780L758 76"/>
+       <path d="M350 290L385 262H420L442 244"/>
+       <path d="M850 290L815 262H780L758 244"/>
+     </g>
+     
+     <!-- High-energy edge accents -->
+     <g fill="none" stroke="#E8D5EF"
+        stroke-width="2" stroke-linecap="square">
+       <path d="M304 72L326 92H352"/>
+       <path d="M896 72L874 92H848"/>
+       <path d="M304 248L326 228H352"/>
+       <path d="M896 248L874 228H848"/>
+     </g>
+     
+     <!-- Technical gate nodes -->
+     <g fill="#E8D5EF">
+       <path d="M390 43H404V45H390Z"/>
+       <path d="M796 43H810V45H796Z"/>
+       <path d="M390 275H404V277H390Z"/>
+       <path d="M796 275H810V277H796Z"/>
+     </g>
+     
+     <!-- Subtle energy pulse -->
+     <path d="M430 122L510 82H690L770 122"
+           fill="none" stroke="#BEAED5"
+           stroke-width="2" stroke-opacity=".55"/>
+     
+     <path d="M430 198L510 238H690L770 198"
+           fill="none" stroke="#BEAED5"
+           stroke-width="2" stroke-opacity=".55"/>
+     
+     <path d="M470 69H730"
+           stroke="#E8D5EF" stroke-opacity=".45"/>
+     
+     <path d="M470 251H730"
+           stroke="#E8D5EF" stroke-opacity=".45"/>
+
+
+    <!-- Circuit traces: left -->
+    <g fill="none" stroke="#BEAED5"
+       stroke-width="1" stroke-opacity=".42">
+      <path d="M0 84H105L137 116H218"/>
+      <path d="M0 98H91L124 131H186"/>
+      <path d="M0 112H70L98 140H158"/>
+      <path d="M0 230H95L129 196H204"/>
+      <path d="M0 245H113L145 213H225"/>
+      <path d="M40 0V29L66 55V70"/>
+      <path d="M177 0V22L196 41V58"/>
     </g>
 
-    <g fill="#A371F7" opacity=".75">
-      <circle cx="150" cy="82" r="2"/>
-      <circle cx="1050" cy="82" r="2"/>
-      <circle cx="120" cy="248" r="2"/>
-      <circle cx="1080" cy="248" r="2"/>
+    <!-- Circuit traces: right -->
+    <g fill="none" stroke="#BEAED5"
+       stroke-width="1" stroke-opacity=".42">
+      <path d="M1200 84H1095L1063 116H982"/>
+      <path d="M1200 98H1109L1076 131H1014"/>
+      <path d="M1200 112H1130L1102 140H1042"/>
+      <path d="M1200 230H1105L1071 196H996"/>
+      <path d="M1200 245H1087L1055 213H975"/>
+      <path d="M1160 0V29L1134 55V70"/>
+      <path d="M1023 0V22L1004 41V58"/>
     </g>
 
-    <!-- Terminal frame -->
-    <rect x="18" y="18" width="1164" height="284" rx="5"
-          fill="none"
-          stroke="#6D28D9"
-          stroke-opacity=".48"/>
-
-    <!-- Angular corner brackets -->
-    <g fill="none"
-       stroke="#A371F7"
-       stroke-width="2"
-       stroke-linecap="square"
-       filter="url(#glow)">
-      <path d="M42 70V42H92"/>
-      <path d="M1108 42H1158V70"/>
-      <path d="M42 250V278H92"/>
-      <path d="M1108 278H1158V250"/>
+    <!-- Circuit nodes -->
+    <g fill="#E8D5EF">
+      <circle cx="105" cy="84" r="2"/>
+      <circle cx="218" cy="116" r="2"/>
+      <circle cx="91" cy="98" r="1.5"/>
+      <circle cx="204" cy="230" r="2"/>
+      <circle cx="1095" cy="84" r="2"/>
+      <circle cx="982" cy="116" r="2"/>
+      <circle cx="1109" cy="98" r="1.5"/>
+      <circle cx="996" cy="230" r="2"/>
     </g>
 
-    <!-- Top status bar -->
-    <g font-family="monospace" font-size="11" letter-spacing="2">
-      <text x="62" y="61" fill="#C9A7FF">IDENTITY.SYS</text>
-      <text x="1138" y="61"
-            fill="#9B91AC"
+    <!-- Peripheral data markers -->
+    <g stroke="#AAA5B9" stroke-opacity=".3" fill="none">
+      <path d="M50 150H142 M50 156H105 M50 162H126"/>
+      <path d="M1150 150H1058 M1150 156H1095 M1150 162H1074"/>
+      <path d="M62 175H116 M62 181H94"/>
+      <path d="M1138 175H1084 M1138 181H1106"/>
+    </g>
+
+    <!-- Outer chassis -->
+    <rect x="18" y="18" width="1164" height="284" rx="4"
+          fill="none" stroke="#AAA5B9"
+          stroke-opacity=".42"/>
+
+    <path d="M19 64V19H106
+             M1094 19H1181V64
+             M19 256V301H106
+             M1094 301H1181V256"
+          fill="none" stroke="url(#edge)"
+          stroke-width="1.5"/>
+
+    <!-- Corner accents: kept away from text -->
+    <g fill="none" stroke="#BEAED5"
+       stroke-width="2" stroke-linecap="square">
+      <path d="M30 49V30H49"/>
+      <path d="M1151 30H1170V49"/>
+      <path d="M30 271V290H49"/>
+      <path d="M1151 290H1170V271"/>
+    </g>
+
+    <!-- Top status strip -->
+    <path d="M62 80H1138"
+          stroke="url(#edge)" stroke-opacity=".65"/>
+
+    <path d="M62 80H290"
+          stroke="#E8D5EF" stroke-width="1.5"/>
+
+    <g font-family="monospace" font-size="10"
+       letter-spacing="1.8">
+      <text x="70" y="58" fill="#BEAED5">ACE / IDENTITY.SYS</text>
+      <text x="1130" y="58" fill="#AAA5B9"
             text-anchor="end">K-001 // PROFILE</text>
     </g>
 
-    <path d="M62 80H1138"
-          stroke="url(#neon)"
-          stroke-width="1"/>
+    <!-- Small system markers -->
+    <g fill="#BEAED5">
+      <rect x="70" y="90" width="5" height="5"/>
+      <rect x="79" y="90" width="5" height="5" opacity=".5"/>
+      <rect x="88" y="90" width="5" height="5" opacity=".25"/>
+      <rect x="1107" y="90" width="5" height="5" opacity=".25"/>
+      <rect x="1116" y="90" width="5" height="5" opacity=".5"/>
+      <rect x="1125" y="90" width="5" height="5"/>
+    </g>
+
+    <!-- Name backing and subtle light -->
+    <path d="M360 98H840L820 190H380Z"
+          fill="url(#panelGlow)" opacity=".55"/>
 
     <!-- Main identity -->
-    <text x="600" y="158"
+    <text x="600" y="157"
           font-family="Orbitron, Rajdhani, Arial, sans-serif"
-          font-size="82"
-          font-weight="900"
+          font-size="82" font-weight="900"
           letter-spacing="3"
           fill="#FFFFFF"
           text-anchor="middle">katana.</text>
 
-    <!-- Neon underline -->
-    <path d="M465 178H735"
-          stroke="#A371F7"
-          stroke-width="2"
+    <!-- Name underline -->
+    <path d="M464 178H736"
+          stroke="#BEAED5" stroke-width="1.5"
           filter="url(#glow)"/>
+
+    <path d="M464 184H510 M690 184H736"
+          stroke="#AAA5B9" stroke-opacity=".55"/>
 
     <!-- Role -->
     <text x="600" y="214"
           font-family="Orbitron, Rajdhani, Arial, sans-serif"
-          font-size="22"
-          font-weight="700"
+          font-size="21" font-weight="700"
           letter-spacing="4"
-          fill="#C9A7FF"
+          fill="#E8D5EF"
           text-anchor="middle">DATA ENGINEER</text>
 
     <!-- Specialization -->
     <text x="600" y="241"
           font-family="monospace"
-          font-size="12"
-          letter-spacing="3"
-          fill="#9B91AC"
+          font-size="11" letter-spacing="2.6"
+          fill="#AAA5B9"
           text-anchor="middle">DATA / SYSTEMS / ARCHITECTURE</text>
 
-    <!-- Bottom status bar -->
+    <!-- Bottom status strip -->
     <path d="M62 259H1138"
-          stroke="#6D28D9"
-          stroke-opacity=".5"/>
+          stroke="#AAA5B9" stroke-opacity=".3"/>
 
-    <circle cx="72" cy="280" r="3" fill="#A371F7">
+    <path d="M62 259H280"
+          stroke="#BEAED5" stroke-opacity=".75"/>
+
+    <circle cx="73" cy="280" r="3" fill="#E8D5EF"
+            filter="url(#glow)">
       <animate attributeName="opacity"
-               values=".4;1;.4"
-               dur="2.4s"
-               repeatCount="indefinite"/>
+               values=".35;1;.35"
+               dur="2.4s" repeatCount="indefinite"/>
     </circle>
 
-    <text x="84" y="284"
-          font-family="monospace"
-          font-size="10"
-          letter-spacing="1.5"
-          fill="#C9A7FF">SYSTEM ONLINE</text>
+    <text x="86" y="284"
+          font-family="monospace" font-size="10"
+          letter-spacing="1.4"
+          fill="#BEAED5">SYSTEM ONLINE</text>
 
     <text x="1138" y="284"
-          font-family="monospace"
-          font-size="10"
-          letter-spacing="1.5"
-          fill="#9B91AC"
-          text-anchor="end">BUILDING THE UNKNOWN</text>
+          font-family="monospace" font-size="10"
+          letter-spacing="1.4"
+          fill="#AAA5B9" text-anchor="end">BUILDING THE UNKNOWN</text>
 
-    <!-- Subtle animated scan -->
-    <rect x="20" y="18" width="1160" height="26"
-          fill="url(#scan)" opacity=".65">
+    <!-- Moving scan beam -->
+    <rect x="20" y="18" width="1160" height="18"
+          fill="url(#panelGlow)" opacity=".45">
       <animate attributeName="y"
-               values="18;276;18"
-               dur="9s"
-               repeatCount="indefinite"/>
+               values="18;284;18"
+               dur="10s" repeatCount="indefinite"/>
     </rect>
+
+    <!-- Fine terminal scanlines -->
+    <g stroke="#FFFFFF" stroke-opacity=".025">
+      <path d="M20 105H1180"/>
+      <path d="M20 109H1180"/>
+      <path d="M20 113H1180"/>
+      <path d="M20 217H1180"/>
+      <path d="M20 221H1180"/>
+      <path d="M20 225H1180"/>
+    </g>
 
   </g>
 </svg>
