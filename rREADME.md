@@ -12,6 +12,12 @@
 
 ## `01` / FEATURED PROJECT
 
+<img
+  src="./assets/ace-terminal.svg"
+  width="100%"
+  alt="Project ACE — miniature global monitoring terminal"
+/>
+
 <div align="center">
 
 ### ◈ PROJECT ACE — ALL-SEEING EYE
