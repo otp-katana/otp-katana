@@ -154,27 +154,6 @@ Project ACE is a real-time global data terminal built to explore the events shap
 <p align="center">
   <a href="mailto:emregedukk@gmail.com">
     <img src="https://img.shields.io/badge/Email-BEAED5?style=flat-square&logo=gmail&logoColor=08080F" alt="Email" />
-  </a>
-  <a href="https://www.kaggle.com/otpkatana" target="_blank">
-    <img src="https://img.shields.io/badge/Kaggle-BEAED5?style=flat-square&logo=kaggle&logoColor=08080F" alt="Kaggle" />
-  </a>
-  <a href="https://discord.com/users/otp-katana" target="_blank">
-    <img src="https://img.shields.io/badge/Discord-BEAED5?style=flat-square&logo=discord&logoColor=08080F" alt="Discord" />
-  </a>
-  <a href="https://bsky.app/profile/otp-katana.bsky.social" target="_blank">
-    <img src="https://img.shields.io/badge/Bluesky-BEAED5?style=flat-square&logo=bluesky&logoColor=08080F" alt="Bluesky" />
-  </a>
-  <a href="https://mastodon.social/@_katana" target="_blank">
-    <img src="https://img.shields.io/badge/Mastodon-BEAED5?style=flat-square&logo=mastodon&logoColor=08080F" alt="Mastodon" />
-  </a>
-  <a href="https://www.quora.com/profile/Katana-277" target="_blank">
-    <img src="https://img.shields.io/badge/Quora-BEAED5?style=flat-square&logo=quora&logoColor=08080F" alt="Quora" />
-  </a>
-  <a href="https://stackoverflow.com/users/32369697/katana" target="_blank">
-    <img src="https://img.shields.io/badge/StackOverflow-BEAED5?style=flat-square&logo=stackoverflow&logoColor=08080F" alt="StackOverflow" />
-  </a>
-  <a href="https://www.reddit.com/user/otp-katana/" target="_blank">
-    <img src="https://img.shields.io/badge/Reddit-BEAED5?style=flat-square&logo=reddit&logoColor=08080F" alt="Reddit" />
      
 <div align="center">
   <img src="assets/pacman.svg" width="100%" alt="ACE Arcade Ticker" />
