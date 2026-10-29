@@ -277,7 +277,7 @@
 
     <!-- Minimal HUD labels -->
     <g font-family="monospace" font-size="9" letter-spacing="1.5" fill="#AAA5B9">
-      <text x="26" y="29">ACE // ACTIVITY ARCADE</text>
+      <text x="26" y="29">ACTIVITY ARCADE</text>
       <text x="26" y="43" fill="#BEAED5" font-size="8">01 — SPACE RUN</text>
       <text x="794" y="29" text-anchor="end">FLIGHT SIMULATION</text>
       <text x="794" y="43" text-anchor="end" opacity=".65">SECTOR 07 / DEEP SPACE</text>
