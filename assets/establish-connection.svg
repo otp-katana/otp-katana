@@ -19,7 +19,7 @@
   <circle cx="22" cy="21" r="3" fill="#BEAED5"/>
   <circle cx="34" cy="21" r="3" fill="#AAA5B9" opacity=".65"/>
   <circle cx="46" cy="21" r="3" fill="#AAA5B9" opacity=".35"/>
-  <text x="62" y="25" fill="#AAA5B9" font-family="monospace" font-size="10" letter-spacing="2">ACE // ESTABLISH CONNECTION</text>
+  <text x="62" y="25" fill="#AAA5B9" font-family="monospace" font-size="10" letter-spacing="2">ESTABLISH CONNECTION</text>
   <text x="794" y="25" fill="#BEAED5" font-family="monospace" font-size="9" text-anchor="end">NET-01</text>
 
   <text x="28" y="69" fill="#AAA5B9" font-family="monospace" font-size="9" letter-spacing="2">SECURE HANDSHAKE PROTOCOL</text>
