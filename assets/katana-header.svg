@@ -577,7 +577,7 @@
 
     <g font-family="monospace" font-size="10"
        letter-spacing="1.8">
-      <text x="70" y="58" fill="#BEAED5">ACE / IDENTITY.SYS</text>
+      <text x="70" y="58" fill="#BEAED5">IDENTITY.SYS</text>
       <text x="1130" y="58" fill="#AAA5B9"
             text-anchor="end">K-001 // PROFILE</text>
     </g>
