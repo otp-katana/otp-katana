@@ -221,18 +221,18 @@ def build_svg(user):
       <rect x="1" y="1" width="998" height="418" rx="9"
         fill="none" stroke="{GRID}"/>
 
-      <text x="42" y="42" class="eyebrow">ACE / DATA TERMINAL</text>
+      <text x="42" y="42" class="eyebrow">DATA TERMINAL</text>
       <text x="42" y="76" class="heading">GITHUB SIGNAL</text>
       <text x="42" y="101" class="muted">
         @{safe(USERNAME)} · PUBLIC PROFILE ANALYTICS
       </text>
 
       <text x="958" y="43" text-anchor="end" class="eyebrow">
-        SYSTEM ONLINE
+        LAST UPDATED
       </text>
       <circle cx="966" cy="64" r="3" fill="{ACCENT}"/>
       <text x="958" y="89" text-anchor="end" class="muted">
-        UPDATED {safe(updated)}
+        {safe(updated)}
       </text>
 
       <rect x="32" y="119" width="936" height="86" rx="6"
