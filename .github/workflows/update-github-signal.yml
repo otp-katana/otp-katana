@@ -1,4 +1,4 @@
-name: Update ACE GitHub Signal
+name: Update GitHub Signal
 
 on:
   schedule:
