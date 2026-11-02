@@ -112,33 +112,12 @@ Project ACE is a real-time global data terminal built to explore the events shap
 ## ▱│ GITHUB SIGNAL
 
 <div align="center">
-  <table>
-    <tr>
-      <td align="center" width="50%">
-        <img
-          src="https://github-readme-stats.vercel.app/api?username=otp-katana&amp;show_icons=true&amp;hide_border=true&amp;bg_color=08080F&amp;title_color=BEAED5&amp;icon_color=BEAED5&amp;text_color=E8D5EF&amp;rank_icon=github"
-          width="100%"
-          alt="GitHub Profile Statistics"
-        />
-      </td>
-      <td align="center" width="50%">
-        <img
-          src="https://github-readme-streak-stats.herokuapp.com/?user=otp-katana&amp;hide_border=true&amp;background=08080F&amp;stroke=AAA5B9&amp;ring=BEAED5&amp;fire=E8D5EF&amp;currStreakLabel=BEAED5&amp;sideLabels=AAA5B9&amp;currStreakNum=FFFFFF&amp;sideNums=E8D5EF&amp;dates=AAA5B9"
-          width="100%"
-          alt="GitHub Contribution Streak"
-        />
-      </td>
-    </tr>
-  </table>
-</div>
-
-
-<p align="center">
   <img
-    src="https://komarev.com/ghpvc/?username=otp-katana&style=flat-square&color=BEAED5&label=PROFILE+VIEWS"
-    alt="Profile views"
+    src="./assets/github-signal.svg"
+    width="100%"
+    alt="GitHub Signal — Profile Analytics"
   />
-</p>
+</div>
   
 
 ---
